@@ -1,8 +1,8 @@
 <template>
   <div class="language">
-      <v-list>
+      <v-list class="list">
         <template v-for="(language, index) in languages">
-          <v-list-tile :key="language.code" @click="route(language.code)" class="pa-2">
+          <v-list-tile :key="language.code" @click="route(language.code)" class="pa-3">
             <v-list-tile-content>
               <v-list-tile-title class="lang">{{ language.text }}</v-list-tile-title>
             </v-list-tile-content>
@@ -40,6 +40,10 @@ export default {
 .lang {
   text-align: center;
   font-size: 18pt;
+}
+
+.list {
+  background-color: #fafafa;
 }
 </style>
 
