@@ -18,7 +18,7 @@ export default {
   components: { Flag },
   computed: {
     ...mapState({
-      countries: state => state.countryCodes
+      countries: state => state.demoCountryCodes
     })
   },
   methods: {
