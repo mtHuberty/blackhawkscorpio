@@ -41,6 +41,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.flag-icon {
+  transform: scale(1.7);
+}
 </style>
 

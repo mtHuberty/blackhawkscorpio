@@ -23,7 +23,7 @@
       </v-flex>
       <v-flex xs12 mt-5 class='ratings-bar'>
         <v-layout row>
-          <v-flex xs7/>
+          <v-flex mr-1 xs7/>
           <v-flex xs1>
             <div :class="'d-flex flag-icon flag-icon-us'"/>
           </v-flex>
@@ -90,7 +90,7 @@
         </v-layout>
         <v-layout v-for="(comment, i) in comments" :key="i" row wrap mt-2>
           <v-flex mr-2 xs1>
-            <v-icon color="grey">fas fa-user</v-icon>
+            <v-icon color="grey" small>fas fa-user</v-icon>
           </v-flex>
           <v-flex xs10>
             <div>{{ comment }}</div>
