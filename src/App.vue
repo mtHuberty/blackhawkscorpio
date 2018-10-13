@@ -19,4 +19,7 @@ a {
   margin: auto;
   padding: 1rem;
 }
+.v-text-field__details {
+  display: none;
+}
 </style>

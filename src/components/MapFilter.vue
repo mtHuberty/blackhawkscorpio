@@ -30,10 +30,13 @@ export default {
           )
         ];
       }
-    })
+    }),
+    service() {
+      return this.$route.params.service || "";
+    },
   },
   created() {
-    this.fetchPlaces()
+    this.fetchPlaces(this.service);
   }
 };
 </script>
