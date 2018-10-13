@@ -1,10 +1,10 @@
 <template>
   <v-container grid-list-sm fluid>
     <v-layout row wrap>
-      <v-flex pa-2 xs23 d-flex>
+      <v-flex pa-2 xs12 d-flex>
         <v-text-field
           solo
-          label=""
+          label="Country"
           append-icon="search"
           v-model="search"
         ></v-text-field>
