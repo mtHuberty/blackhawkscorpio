@@ -1,5 +1,5 @@
 <template>
-  <v-card flat tile :class="'d-flex flag-icon flag-icon-' + this.country"></v-card>
+  <div :class="'d-flex flag-icon mb-2 flag-icon-' + this.country" @click="route"></div>
 </template>
 
 <script>
@@ -8,15 +8,14 @@ export default {
   props: {
     country: String
   },
-  method: {
-    select: function() {
-      console.log(this.country);
+  methods: {
+    route: function() {
+      this.$router.push(`/country/${this.country}`);
     }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .flag-icon {
   background-color: transparent;
