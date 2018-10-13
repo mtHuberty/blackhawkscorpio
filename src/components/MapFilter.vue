@@ -19,10 +19,14 @@ export default {
   computed: {
     ...mapState({
       countries: function(state) {
-        return state.places
-          .reduce((ratings, place) => ratings.concat(place.ratings), [])
-          .map(rating => rating.culture)
-          .filter(culture => state.countryCodes.includes(culture));
+        return [
+          ...new Set(
+            state.places
+              .reduce((ratings, place) => ratings.concat(place.ratings), [])
+              .map(rating => rating.culture)
+              .filter(culture => state.countryCodes.includes(culture))
+          )
+        ];
       }
     })
   }
