@@ -2,10 +2,10 @@
 <v-tabs dark color="darkgrey" show-arrows v-if="this.countries.length">
     <v-tabs-slider ></v-tabs-slider>
     <v-tab @click="updateMapCountryFilter('')">
-      <v-icon color="white" small>fas fa-globe</v-icon>
+      <v-btn icon><v-icon color="white" small>fas fa-globe</v-icon></v-btn>
     </v-tab>
     <v-tab v-for="country in countries" :key="country" @click="updateMapCountryFilter(country)">
-      <div :class="'flag-icon flag-icon-' + country"></div>
+      <v-btn icon><div :class="'flag-icon flag-icon-' + country"></div></v-btn>
     </v-tab>
   </v-tabs>
 </template>
@@ -33,7 +33,7 @@ export default {
     }),
     service() {
       return this.$route.params.service || "";
-    },
+    }
   },
   created() {
     this.fetchPlaces(this.service);
@@ -42,8 +42,18 @@ export default {
 </script>
 
 <style scoped>
+.v-tabs__item--active {
+  background-color: #8a8989;
+}
 .flag-icon {
   transform: scale(1.7);
+}
+.v-tabs__item--active .v-icon.fas {
+  color: black;
+}
+.v-tabs__slider.accent {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
 }
 </style>
 
