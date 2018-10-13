@@ -43,11 +43,13 @@ export default {
         {
           icon: 'fas fa-home',
           color: 'orange',
+          fullWidth: true,
           name: 'housing'
         },
         {
           icon: 'fas fa-utensils',
           color: 'green',
+          fullWidth: true,
           name: 'grocery'
         },
         {
@@ -64,6 +66,11 @@ export default {
           icon: 'fas fa-money-check-alt',
           color: 'grey',
           name: 'bank'
+        },
+        {
+          icon: 'fas fa-school',
+          color: 'pink',
+          name: 'school'
         },
       ]
     })
