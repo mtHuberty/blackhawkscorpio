@@ -26,6 +26,14 @@ class Rating {
   }
 }
 
+const sluPlace = new Place(
+  "57383f8bb6b4cd28ed11aab665263c7b0a9bab52",
+  "Saint Louis University",
+  38.6354598,
+  -90.23382319999999,
+  [new Rating("slu-57383f8bb6b4cd28ed11aab665263c7b0a9bab52", "us", 4, [])]
+);
+
 export default new Vuex.Store({
   state: {
     places: [],
@@ -53,14 +61,8 @@ export default new Vuex.Store({
     mapCountryFilter: ''
   },
   mutations: {
-    updatePlaces(state, payload) {
-      state.places = payload.places.data.map(place => {
-        let placeRatings = place.ratings.map((rating, index) => {
-          return new Rating(`${rating.culture}-${index}-${place.id}`, (rating.culture || "").toLowerCase(), rating.score, rating.comments);
-        })
-        return new Place(place.id, place.name, place.lat, place.long, placeRatings);
-      });
-      console.log(state.places);
+    updatePlaces(state, places) {
+      state.places = places
     },
     updateMapCountryFilter(state, countryCode) {
       state.mapCountryFilter = countryCode
@@ -72,7 +74,20 @@ export default new Vuex.Store({
   actions: {
     fetchPlaces({ commit }, serviceType) {
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
-        .then(places => commit('updatePlaces', { places }))
+        .then(places => {
+          let updatedPlaces = places.data.map(place => {
+            let placeRatings = place.ratings.map((rating, index) => {
+              return new Rating(`${rating.culture}-${index}-${place.id}`, (rating.culture || "").toLowerCase(), rating.score, rating.comments);
+            })
+            return new Place(place.id, place.name, place.lat, place.long, placeRatings);
+          });
+
+          if (serviceType.toLowerCase() === "school") {
+            updatedPlaces = [sluPlace, ...updatedPlaces];
+          }
+
+          commit('updatePlaces', updatedPlaces)
+        })
         .catch(err => commit('error', err))
     },
     updateMapCountryFilter({ commit }, countryCode) {
