@@ -1,7 +1,9 @@
 <template>
 <v-tabs dark show-arrows v-if="this.countries.length">
     <v-tabs-slider ></v-tabs-slider>
-    <v-tab @click="updateMapCountryFilter('')">*</v-tab>
+    <v-tab @click="updateMapCountryFilter('')">
+      <v-icon color="white" small>fas fa-globe</v-icon>
+    </v-tab>
     <v-tab v-for="country in countries" :key="country" @click="updateMapCountryFilter(country)">
       <div :class="'flag-icon flag-icon-' + country"></div>
     </v-tab>
@@ -14,7 +16,7 @@ import { mapState, mapActions } from "vuex";
 export default {
   name: "MapFilter",
   methods: {
-    ...mapActions(["testFetchMap", "updateMapCountryFilter"])
+    ...mapActions(["fetchPlaces", "updateMapCountryFilter"])
   },
   computed: {
     ...mapState({
@@ -31,7 +33,7 @@ export default {
     })
   },
   created() {
-    this.testFetchMap()
+    this.fetchPlaces()
   }
 };
 </script>
