@@ -69,6 +69,7 @@ export default {
       }
 
       this.center = bounds.getCenter();
+      this.$refs.map.fitBounds(bounds);
       clearInterval(this.inter);
     }
   },
@@ -86,6 +87,7 @@ export default {
     this.inter = setInterval(function() {
       vm.fitToBounds();
     }, 500);
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 };
 </script>
