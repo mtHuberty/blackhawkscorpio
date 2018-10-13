@@ -1,5 +1,5 @@
 <template>
-<v-tabs dark color="darkgrey" show-arrows v-if="this.countries.length">
+<v-tabs dark color="darkgrey" show-arrows v-if="this.countries.length > 1">
     <v-tabs-slider ></v-tabs-slider>
     <v-tab @click="updateMapCountryFilter('')">
       <v-btn icon><v-icon color="white" small>fas fa-globe</v-icon></v-btn>
