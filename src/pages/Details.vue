@@ -51,7 +51,41 @@
             <v-text-field color="blue" label="Yorumun"/>
           </v-flex>
           <v-flex>
-            <v-btn icon color="info"><v-icon>fas fa-comment</v-icon></v-btn>
+            <v-dialog
+              v-model="dialog"
+              width="400"
+            >
+              <v-btn 
+                icon color="info"
+                slot="activator"
+                dark
+              >
+                <v-icon>fas fa-comment</v-icon>
+              </v-btn>
+              <v-card>
+                <v-card-title
+                  class="headline lighten-2"
+                  primary-title
+                >
+                  Değerlendirme
+                </v-card-title>
+
+                <v-divider></v-divider>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn flat @click="dialog = false">
+                    <v-icon color="red">fas fa-frown</v-icon>
+                  </v-btn>
+                  <v-btn flat @click="dialog = false">
+                    <v-icon color="grey">fas fa-meh</v-icon>
+                  </v-btn>
+                  <v-btn flat @click="dialog = false">
+                    <v-icon color="green">fas fa-smile</v-icon>
+                  </v-btn>
+                  <v-spacer></v-spacer>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
           </v-flex>
         </v-layout>
         <v-layout v-for="(comment, i) in comments" :key="i" row wrap mt-2>
@@ -72,6 +106,7 @@ export default {
   name: "Details",
   data() {
     return {
+      dialog: false,
       pictures: [
         {
           src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
