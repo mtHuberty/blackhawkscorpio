@@ -21,6 +21,6 @@ export default {
   background-color: transparent;
   background-size: auto;
   background-repeat: no-repeat;
-  min-height: 200px;
+  min-height: 115px;
 }
 </style>

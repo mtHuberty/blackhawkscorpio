@@ -1,6 +1,14 @@
 <template>
   <v-container grid-list-sm fluid>
     <v-layout row wrap>
+      <v-flex pa-2 xs12 d-flex>
+        <v-text-field
+          solo
+          label="Country"
+          append-icon="search"
+          v-model="search"
+        ></v-text-field>
+      </v-flex>
       <v-flex pa-2 v-for="country in countries" :key="country" xs6 sm4 md3 d-flex>
         <Flag :country="country"></Flag>
       </v-flex>
@@ -16,12 +24,29 @@ import { mapState } from "vuex";
 export default {
   name: "country",
   components: { Flag },
+  data() {
+    return {
+      search: ""
+    };
+  },
   computed: {
     ...mapState({
-      countries: state => state.demoCountryCodes
+      lookup: state => state.countryCodeLookup,
+      countries: function(state) {
+        return (
+          (Object.entries(this.lookup) || [])
+            .filter(
+              ([key]) =>
+                this.search === "" ||
+                key
+                  .toLocaleLowerCase()
+                  .startsWith(this.search.toLocaleLowerCase())
+            )
+            .map(([, code]) => code)
+            .filter(code => state.demoCountryCodes.includes(code)) || []
+        );
+      }
     })
-  },
-  methods: {
   }
 };
 </script>
