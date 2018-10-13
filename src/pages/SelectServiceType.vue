@@ -1,7 +1,17 @@
 <template>
-  <v-layout class='page'>
-    <v-flex>
-
+  <v-layout row class='page' wrap>
+    <v-flex pa-2 v-for="item in items" :key="item.name" :xs12="item.fullWidth" :md12="item.fullWidth" xs6 md4>
+      <router-link :to="item.name">
+        <v-card :color="item.color" class='service'>
+          <v-card-text>
+            <v-layout row justify-center align-center>
+              <div class='service-icon'>
+                <v-icon :color="item.color" x-large>{{ item.icon }}</v-icon>
+              </div>
+            </v-layout>
+          </v-card-text>
+        </v-card>
+      </router-link>
     </v-flex>
   </v-layout>
 </template>
@@ -13,12 +23,66 @@ export default {
     return ({
       items: [
         {
-          icon: 'fas fa-plus',
+          icon: 'fas fa-hospital',
           color: 'red',
-          name: 'hosspital'
-        }
+          fullWidth: true,
+          name: 'hospital'
+        },
+        {
+          icon: 'fas fa-shield-alt',
+          color: 'blue',
+          halfWidth: true,
+          name: 'police'
+        },
+        {
+          icon: 'fas fa-gavel',
+          color: 'brown',
+          halfWidth: true,
+          name: 'lawyer'
+        },
+        {
+          icon: 'fas fa-home',
+          color: 'orange',
+          name: 'housing'
+        },
+        {
+          icon: 'fas fa-utensils',
+          color: 'green',
+          name: 'grocery'
+        },
+        {
+          icon: 'fas fa-child',
+          color: 'yellow',
+          name: 'childCare'
+        },
+        {
+          icon: 'fas fa-bus',
+          color: 'purple',
+          name: 'transportation'
+        },
+        {
+          icon: 'fas fa-money-check-alt',
+          color: 'grey',
+          name: 'bank'
+        },
       ]
     })
   }
 }
 </script>
+
+<style>
+.service {
+  padding: 3rem;
+  cursor: pointer;
+}
+.service:hover {
+  opacity: 0.9;
+}
+.service-icon {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+</style>
