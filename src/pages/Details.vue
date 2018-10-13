@@ -4,25 +4,24 @@
       <v-layout column wrap>
         <v-flex>
           <v-img
-            :src="`https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/240px-St_Louis_night_expblend_cropped.jpg`"
+            :src="`https://www.slu.edu/img/home/aerials_northcampus-min.jpg`"
             aspect-ratio="1"
             class="grey lighten-2"
-            height="200"
-            width="200"
+            height="225"
+            width="250"
           />
         </v-flex>
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12>
           <h1>
-            GateWay Arch
+            Saint Louis Üniversitesi
           </h1>
         </v-flex>
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12>
-          <h4>Description: </h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <p>1818'de kurulan Saint Louis Üniversitesi, ülkenin en eski ve en prestijli Katolik üniversitelerinden biridir. İspanya'nın Madrid kentinde de kampüse sahip olan SLU, dünya çapında akademisyenler, hayatı değiştiren araştırmalar, şefkatli sağlık hizmetleri ve inanç ve hizmete güçlü bir bağlılık olarak tanınmaktadır.</p>
         </v-flex>
       </v-layout>
       <v-layout row wrap>
@@ -40,7 +39,7 @@
           <v-icon color="red">fas fa-frown</v-icon>
         </v-flex>
         <v-flex xs4>
-          <v-icon color="yellow">fas fa-meh</v-icon>
+          <v-icon color="grey">fas fa-meh</v-icon>
         </v-flex>
         <v-flex xs4>
           <v-icon color="green">fas fa-smile</v-icon>
@@ -51,7 +50,7 @@
           <v-icon color="blue">fas fa-user</v-icon>
         </v-flex>
         <v-flex xs7>
-          <v-text-field color="blue" label="Regular"/>
+          <v-text-field color="blue" label="Yorumun"/>
         </v-flex>
         <v-flex xs3>
           <v-btn color="info">Post</v-btn>
@@ -59,18 +58,19 @@
       </v-layout>
       <v-layout row wrap mt-2>
         <v-flex xs2>
-          <v-icon color="grey">fas fa-user</v-icon>
+          <v-icon color="black">fas fa-user</v-icon>
         </v-flex>
         <v-flex xs10>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare lacus vitae enim tincidunt, a bibendum enim feugiat. Aliquam tincidunt justo eu nunc sollicitudin facilisis.</div>
+          <div>Billikens'e git!</div>
         </v-flex>
       </v-layout>
       <v-layout row wrap mt-2>
         <v-flex xs2>
-          <v-icon color="grey">fas fa-user</v-icon>
+          <v-icon color="black">fas fa-user</v-icon>
         </v-flex>
         <v-flex xs10>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare lacus vitae enim tincidunt, a bibendum enim feugiat. Aliquam tincidunt justo eu nunc sollicitudin facilisis. Nulla ut elit sollicitudin.</div>
+          <div>
+Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz</div>
         </v-flex>
       </v-layout>
     </v-container>
