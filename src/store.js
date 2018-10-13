@@ -84,7 +84,7 @@ export default new Vuex.Store({
           });
 
           if (serviceType.toLowerCase() === "school") {
-            updatedPlaces = [sluPlace, ...updatedPlaces];
+            updatedPlaces = [...updatedPlaces, sluPlace];
           }
 
           commit('updatePlaces', updatedPlaces)
