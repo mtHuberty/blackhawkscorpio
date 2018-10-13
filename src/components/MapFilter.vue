@@ -2,7 +2,7 @@
 <v-tabs dark show-arrows v-if="this.countries.length">
     <v-tabs-slider ></v-tabs-slider>
     <v-tab @click="updateMapCountryFilter('')">
-      <v-icon color="white" small>fas fa-star</v-icon>
+      <v-icon color="white" small>fas fa-globe</v-icon>
     </v-tab>
     <v-tab v-for="country in countries" :key="country" @click="updateMapCountryFilter(country)">
       <div :class="'flag-icon flag-icon-' + country"></div>
