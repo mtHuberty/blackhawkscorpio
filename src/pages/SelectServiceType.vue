@@ -1,5 +1,24 @@
 <template>
-  <div class="service-type">
-    <h1>This is an type page</h1>
-  </div>
+  <v-layout class='page'>
+    <v-flex>
+
+    </v-flex>
+  </v-layout>
 </template>
+
+<script>
+export default {
+  name: 'SelectServiceType',
+  data() {
+    return ({
+      items: [
+        {
+          icon: 'fas fa-plus',
+          color: 'red',
+          name: 'hosspital'
+        }
+      ]
+    })
+  }
+}
+</script>
