@@ -1,8 +1,8 @@
 <template>
   <div class="language">
-      <v-list class="list mt-2">
+      <v-list class="list">
         <template v-for="(language, index) in languages">
-          <v-list-tile :key="language.code" @click="route(language.code)" class="pa-2">
+          <v-list-tile :key="language.code" @click="route(language.code)" class="pa-3">
             <v-list-tile-content>
               <v-list-tile-title class="lang">{{ language.text }}</v-list-tile-title>
             </v-list-tile-content>
