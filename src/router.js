@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import DefaultLayout from './layouts/DefaultLayout.vue'
+
+import Country from './pages/Country.vue'
+import SelectServiceType from './pages/SelectServiceType.vue'
+import Language from './pages/Language.vue'
+import Details from './pages/Details.vue'
+import SelectPlace from './pages/SelectPlace.vue'
 
 Vue.use(Router)
 
@@ -10,16 +16,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      name: 'app',
+      component: DefaultLayout,
+      children: [
+        { name: 'select-country', path: '', component: Country },
+        { name: 'select-language', path: 'country/:countryCode', component: Language },
+        { name: 'select-service-type', path: 'country/:country/language/:lang', component: SelectServiceType },
+        { name: 'select-place', path: 'country/:country/language/:lang/service/:service', component: SelectPlace },
+        { name: 'details', path: 'country/:country/language/:lang/service/:service/place/:place', component: Details },
+      ]
     }
   ]
 })
