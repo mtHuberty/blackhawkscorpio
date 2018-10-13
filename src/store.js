@@ -49,7 +49,7 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    testFetchMap({commit, state}) {
+    fetchPlaces({commit, state}) {
       // return axios.get(`ians url here`)
       return new Promise((resolve, reject) => {
         setTimeout(() => {

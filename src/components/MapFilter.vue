@@ -14,7 +14,7 @@ import { mapState, mapActions } from "vuex";
 export default {
   name: "MapFilter",
   methods: {
-    ...mapActions(["testFetchMap", "updateMapCountryFilter"])
+    ...mapActions(["fetchPlaces", "updateMapCountryFilter"])
   },
   computed: {
     ...mapState({
@@ -31,7 +31,7 @@ export default {
     })
   },
   created() {
-    this.testFetchMap()
+    this.fetchPlaces()
   }
 };
 </script>
