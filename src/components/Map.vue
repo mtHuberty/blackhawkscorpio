@@ -1,5 +1,16 @@
 <template>
-    <GmapMap :center="center" :zoom="7" style="width: 100%; height: 500px">
+    <GmapMap
+        :center="center"
+        :zoom="7"
+        style="width: 100%; height: 500px"
+        :options="{
+            mapTypeControl: false,
+            draggable: false,
+            zoomControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            fullscreenControl: false
+        }" ref="map">
       <GmapMarker v-for="m in markers" :key="m.id" :position="m.position" :clickable="true" @click="pinClick(m)"></GmapMarker>
     </GmapMap>
 </template>
@@ -8,7 +19,7 @@
 import { mapState } from "vuex";
 
 export default {
-  name: "map",
+  name: "google-map-renderer",
   computed: {
     country: function() {
       return this.$route.params.country || "";
@@ -31,6 +42,11 @@ export default {
       }
     })
   },
+  watch: {
+    markers: function() {
+      this.fitToBounds();
+    }
+  },
   methods: {
     pinClick: function(place) {
       this.route(place.id);
@@ -41,15 +57,35 @@ export default {
           this.service
         }/place/${id}`
       );
+    },
+    fitToBounds: function() {
+      if (!window.google) {
+        return;
+      }
+
+      const bounds = new google.maps.LatLngBounds();
+      for (let i = 0; i < this.markers.length; i++) {
+        bounds.extend(this.markers[i].position);
+      }
+
+      this.center = bounds.getCenter();
+      clearInterval(this.inter);
     }
   },
   data: function() {
     return {
       center: {
-        lat: 10.0,
-        lng: 10.0
-      }
+        lat: 0.0,
+        lng: 0.0
+      },
+      inter: null
     };
+  },
+  mounted() {
+    const vm = this;
+    this.inter = setInterval(function() {
+      vm.fitToBounds();
+    }, 500);
   }
 };
 </script>
