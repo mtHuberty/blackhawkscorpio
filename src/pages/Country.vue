@@ -18,14 +18,10 @@ export default {
   components: { Flag },
   computed: {
     ...mapState({
-      countries: state => state.countryCodes
+      countries: state => state.demoCountryCodes
     })
   },
   methods: {
-    logApiKey() {
-      console.log(process.env.VUE_APP_MAP_API_KEY);
-      console.log(process.env.NODE_ENV);
-    }
   }
 };
 </script>

@@ -1,0 +1,726 @@
+{
+    "html_attributions" : [],
+    "next_page_token" : "CqQCHwEAACGjsvjs42uUuYzHZcsGMGXRyp5-GkOEL-ykqA3jVCZMeOcUN3-umPwaHKZRdre6NpkLMJ56ds2x-kXWlpIQvnaxdgKLZVCN5G2oDL17B6pI5s4VIxiVyNEL9pzECiBC-yb4bKlZhCounLy_1Xb4DtaxjX9LgafD1fa2RY6rniDhT2hINE7x4pUJMf8dVBLAypLqeoXKmv7InDttiu7le76-V2E6A18_H_E63-QDq0Evn1SZjQ6e9ZkivlCMd90-ZdiceljMDEi8NendS8LinqXx9yrBY8WT3ipaiDypPcdT3c5ddkWuw6FQaqLmt3cqU-F6lFtrPWgYKjyNjsLuB7noTIqEnLGOyrSVsGj4jCfD3snOkrB3ETA9MvCajsZw7BIQNXXLxMaN1x9zU-vHZz88SxoUxdCcrALF75D3ObOa84DfiUgk3jU",
+    "results" : [
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.6531744,
+                "lng" : -90.2485332
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.65432977989272,
+                   "lng" : -90.24733487010727
+                },
+                "southwest" : {
+                   "lat" : 38.65163012010728,
+                   "lng" : -90.25003452989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "7b61db7c516da7975c838b9d8b303cebe37a0b00",
+          "name" : "Ranken Technical College",
+          "photos" : [
+             {
+                "height" : 1581,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/106376728250329101354/photos\"\u003eRanken Technical College\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAJwCjnQvKkPsxOsC33rAGsleRfE-NSXn4mK7SzQC71-RpHSz2686zCdMWZVijpwT2pziqT-MOmR72RFqTAHVOPYhIxZWKu4teNEGW0o0dhV8zO-1hfeuEc_bYw1SV3HDdEhDqXF8j_UeENv1yOhLjtfjmGhTLgwMBv_o9-1KRooAQuIv6ki94tQ",
+                "width" : 2048
+             }
+          ],
+          "place_id" : "ChIJrcekSDNL34cRLpmhv1ukUMY",
+          "plus_code" : {
+             "compound_code" : "MQ32+7H St. Louis, Missouri",
+             "global_code" : "86CFMQ32+7H"
+          },
+          "rating" : 3.6,
+          "reference" : "ChIJrcekSDNL34cRLpmhv1ukUMY",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "4431 Finney Ave, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.637526,
+                "lng" : -90.2393975
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.63884227989273,
+                   "lng" : -90.23789047010727
+                },
+                "southwest" : {
+                   "lat" : 38.63614262010729,
+                   "lng" : -90.24059012989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "66e9a7a1e7c62f6260202b7ee4dcfca5ad5bc344",
+          "name" : "Missouri",
+          "place_id" : "ChIJF70uT7m02IcRfnPiOoth_54",
+          "plus_code" : {
+             "compound_code" : "JQQ6+26 St. Louis, Missouri",
+             "global_code" : "86CFJQQ6+26"
+          },
+          "rating" : 0,
+          "reference" : "ChIJF70uT7m02IcRfnPiOoth_54",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "Marguerite Hall, 3811 W Pine Blvd, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.5218691,
+                "lng" : -90.37089019999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.52312932989273,
+                   "lng" : -90.36965952010728
+                },
+                "southwest" : {
+                   "lat" : 38.52042967010728,
+                   "lng" : -90.37235917989273
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "28b0189808550ff762190a662701e43407b62c10",
+          "name" : "Concord Elementary School",
+          "place_id" : "ChIJt2zDGdTI2IcRuks64sH-PEQ",
+          "plus_code" : {
+             "compound_code" : "GJCH+PJ Sappington, Missouri",
+             "global_code" : "86CFGJCH+PJ"
+          },
+          "rating" : 4.5,
+          "reference" : "ChIJt2zDGdTI2IcRuks64sH-PEQ",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "10305 Concord School Rd, Sappington"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.6211834,
+                "lng" : -90.35366610000001
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.62253367989272,
+                   "lng" : -90.35196957010729
+                },
+                "southwest" : {
+                   "lat" : 38.61983402010728,
+                   "lng" : -90.35466922989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "0e3110dcc4a2d5a0c6220e18f83d4bb5335c2b15",
+          "name" : "Brentwood High School",
+          "place_id" : "ChIJH3eJghLL2IcRWvXXADGobX8",
+          "plus_code" : {
+             "compound_code" : "JJCW+FG Brentwood, Clayton Township, MO",
+             "global_code" : "86CFJJCW+FG"
+          },
+          "rating" : 4,
+          "reference" : "ChIJH3eJghLL2IcRWvXXADGobX8",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "2221 High School Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.581519,
+                "lng" : -90.40612
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.58287082989272,
+                   "lng" : -90.40489167010728
+                },
+                "southwest" : {
+                   "lat" : 38.58017117010727,
+                   "lng" : -90.40759132989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "294edf72eddbc55846ea137dac766f3fecab9b31",
+          "name" : "School of Rock Kirkwood",
+          "opening_hours" : {
+             "open_now" : true
+          },
+          "photos" : [
+             {
+                "height" : 2448,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/106083658278787531053/photos\"\u003eA Google User\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAWCMzYig_6BjuG-H1T_DsnuI9lHm2FTuLzkB_9m68UNKA1DAXYVvIVWf3GsbjzaUkVkkqe-m7_mATT4u4uqRUQJg9IhsU4LYuem_H-bBVq4s7RzOaVcHHR3BE-oQEch6KEhBxMaNS46RIKj-SW7A75z-MGhSVYwNNIxKmLaEoWLY852rHRdCBkA",
+                "width" : 3264
+             }
+          ],
+          "place_id" : "ChIJ0T0QCDHM2IcRh2XJBpY2eVA",
+          "plus_code" : {
+             "compound_code" : "HHJV+JH Kirkwood, Bonhomme Township, MO",
+             "global_code" : "86CFHHJV+JH"
+          },
+          "rating" : 5,
+          "reference" : "ChIJ0T0QCDHM2IcRh2XJBpY2eVA",
+          "scope" : "GOOGLE",
+          "types" : [
+             "electronics_store",
+             "home_goods_store",
+             "store",
+             "school",
+             "point_of_interest",
+             "establishment"
+          ],
+          "vicinity" : "104 N Kirkwood Rd, Kirkwood"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7205363,
+                "lng" : -90.12379659999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.72188612989272,
+                   "lng" : -90.12244677010727
+                },
+                "southwest" : {
+                   "lat" : 38.71918647010728,
+                   "lng" : -90.12514642989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "65adf66f5c6e22efc9cd548aaecf0efb12eee72d",
+          "name" : "Coolidge Junior High School",
+          "photos" : [
+             {
+                "height" : 2592,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103398177129738728642/photos\"\u003eFranzy Pickerell\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAVsoYpcRd2Dl75FkDtjLX8fxJi8q0HVo1XqlJmMwgduGzVc4i1vwMsH5sLCrH1q8zqtMkg7AGGG9BZ9jzF5fd_SjEzsNqBgO8uduutZ0vQ6glaCBXW86auhNlMovd2CktEhBvJMo1QyRlQyCEqYMr7tH0GhRtgI62TPlH0LEV_2fQKqfgn0vJBg",
+                "width" : 1944
+             }
+          ],
+          "place_id" : "ChIJuzthTjtS34cRm8x-oXgvz_M",
+          "plus_code" : {
+             "compound_code" : "PVCG+6F Granite City, Illinois",
+             "global_code" : "86CFPVCG+6F"
+          },
+          "rating" : 3.1,
+          "reference" : "ChIJuzthTjtS34cRm8x-oXgvz_M",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "3231 Nameoki Rd, Granite City"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.5378251,
+                "lng" : -90.38001159999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.53917447989271,
+                   "lng" : -90.37862152010727
+                },
+                "southwest" : {
+                   "lat" : 38.53647482010727,
+                   "lng" : -90.38132117989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "118d0ca0a70c6fe8f3e0237ccdce4767fe32b41d",
+          "name" : "Lindbergh Schools",
+          "opening_hours" : {
+             "open_now" : false
+          },
+          "place_id" : "ChIJvdsP1tTO2IcR2lX_NKUPoHI",
+          "plus_code" : {
+             "compound_code" : "GJQ9+4X Sappington, Missouri",
+             "global_code" : "86CFGJQ9+4X"
+          },
+          "rating" : 3.9,
+          "reference" : "ChIJvdsP1tTO2IcR2lX_NKUPoHI",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "9350 Sappington Rd, Sappington"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7360757,
+                "lng" : -90.25189569999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.73743307989272,
+                   "lng" : -90.25052652010727
+                },
+                "southwest" : {
+                   "lat" : 38.73473342010728,
+                   "lng" : -90.25322617989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "392de5d06cae0d4a7ef2d95dc4d4701fc8d16e20",
+          "name" : "Jennings Public Schools Administration",
+          "place_id" : "ChIJhY0GD9hL34cRKXZ_N8W7yfg",
+          "plus_code" : {
+             "compound_code" : "PPPX+C6 Jennings, Missouri",
+             "global_code" : "86CFPPPX+C6"
+          },
+          "rating" : 4,
+          "reference" : "ChIJhY0GD9hL34cRKXZ_N8W7yfg",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "2559 Dorwood Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.5901806,
+                "lng" : -90.3471852
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.59161817989271,
+                   "lng" : -90.3463995
+                },
+                "southwest" : {
+                   "lat" : 38.58891852010727,
+                   "lng" : -90.34954230000002
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "69c62f0bbc70bd85286f21b46b65ab626d9aaf26",
+          "name" : "Webster Groves High School",
+          "opening_hours" : {
+             "open_now" : false
+          },
+          "photos" : [
+             {
+                "height" : 2988,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/103981452997645202530/photos\"\u003eBrad Beggs\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAApBNdpRwX_fFk3wXGlB2OK-OIGbMTJSACu7F8sMp45DQHXNEWd-sKTlHOn-avqcWA5UlCF-IWNRtlBPApHAuY9hXYDgPsBUtAVYDbvL3DkApyELGC8As4ZznihYD0OaOAEhAdi2Ail41NQKEAioJsB4JKGhQ6oUrKIDNmdA6XxO2-80wWL2YyeA",
+                "width" : 5312
+             }
+          ],
+          "place_id" : "ChIJX1aNfLjL2IcRwCxRKMR4eug",
+          "plus_code" : {
+             "compound_code" : "HMR3+34 Webster Groves, Jefferson Township, MO",
+             "global_code" : "86CFHMR3+34"
+          },
+          "rating" : 4.1,
+          "reference" : "ChIJX1aNfLjL2IcRwCxRKMR4eug",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "100 Selma Ave, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.530218,
+                "lng" : -90.309763
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.53175022989272,
+                   "lng" : -90.30832107010727
+                },
+                "southwest" : {
+                   "lat" : 38.52905057010727,
+                   "lng" : -90.31102072989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "a636d76b16eb81f06660987c9fc572e61288bfc7",
+          "name" : "Bierbaum Elementary School",
+          "place_id" : "ChIJ7-pjkc3J2IcR05mgvzbuDrE",
+          "plus_code" : {
+             "compound_code" : "GMJR+33 Mehlville, Missouri",
+             "global_code" : "86CFGMJR+33"
+          },
+          "rating" : 4.4,
+          "reference" : "ChIJ7-pjkc3J2IcR05mgvzbuDrE",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "2050 Union Rd, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.6496493,
+                "lng" : -90.4068831
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.65099687989272,
+                   "lng" : -90.40536077010727
+                },
+                "southwest" : {
+                   "lat" : 38.64829722010727,
+                   "lng" : -90.40806042989271
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "ecfd266e02199a477f1a5767a2f9f81626807efe",
+          "name" : "Chaminade College Preparatory School",
+          "opening_hours" : {
+             "open_now" : false
+          },
+          "photos" : [
+             {
+                "height" : 3000,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/117893005790108763939/photos\"\u003eMatt H.\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAz5eCFKtCPr9x_P8WJdNnXeiiph1d39z2xgsTRzZIswOtHzr61g81jbjL20zkztaamVSnOGAzIYfzK1-YF6hWDrcEyzoa2_WOwS0-7zHEmdpC_-xHNh4QTbavv6KAVo_0EhBEfi2NXJPFAj7yr1XPo5iFGhREsqtGynUVILwFufZvtsrUQqdEVA",
+                "width" : 4000
+             }
+          ],
+          "place_id" : "ChIJjyUdntPM2IcRhIi87iJ2mtg",
+          "plus_code" : {
+             "compound_code" : "JHXV+V6 Creve Coeur, Missouri",
+             "global_code" : "86CFJHXV+V6"
+          },
+          "rating" : 4.2,
+          "reference" : "ChIJjyUdntPM2IcRhIi87iJ2mtg",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "425 S Lindbergh Blvd, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7570193,
+                "lng" : -90.2424975
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.75837497989271,
+                   "lng" : -90.24154562010727
+                },
+                "southwest" : {
+                   "lat" : 38.75567532010727,
+                   "lng" : -90.24424527989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "3a67a76a2135340e9a2024baaae5b989f667b6fb",
+          "name" : "Lewis & Clark Elementary School",
+          "place_id" : "ChIJzywMCUBJ34cR0j5GdDMI0qE",
+          "plus_code" : {
+             "compound_code" : "QQ45+R2 Castle Point, St Ferdinand Township, MO",
+             "global_code" : "86CFQQ45+R2"
+          },
+          "rating" : 3.2,
+          "reference" : "ChIJzywMCUBJ34cR0j5GdDMI0qE",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "10242 Prince Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7188267,
+                "lng" : -90.1241038
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.72026907989272,
+                   "lng" : -90.12245922010727
+                },
+                "southwest" : {
+                   "lat" : 38.71756942010728,
+                   "lng" : -90.12515887989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "b4128ad74a7d1e9aaba27c9daba7398186dad098",
+          "name" : "Granite City High School",
+          "photos" : [
+             {
+                "height" : 1152,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/115280162915338037384/photos\"\u003eShannan Muskopf\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAnlXf05Rk5IUfK9CvYnp5IxDYCBT_5aOK6vE8Dfq5fh92ARZ5pWT8wqXTPthmjmTv_96SmvOX4tUXK0XWyLwIZf3Hp7xZuPq2GjsqmwmKeXUc-VE1FYEvWatlC70eGErhEhCQS3byknx2oBTzFdpVbGcPGhRg6aXRLrdT0ajHyvlmlSeH_oh8yQ",
+                "width" : 2048
+             }
+          ],
+          "place_id" : "ChIJm07Z2jhS34cRv4E4SRyICG4",
+          "plus_code" : {
+             "compound_code" : "PV9G+G9 Granite City, Illinois",
+             "global_code" : "86CFPV9G+G9"
+          },
+          "rating" : 3.8,
+          "reference" : "ChIJm07Z2jhS34cRv4E4SRyICG4",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "3101 Madison Ave, Granite City"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.6309982,
+                "lng" : -90.3024286
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.63256237989272,
+                   "lng" : -90.30105222010728
+                },
+                "southwest" : {
+                   "lat" : 38.62986272010728,
+                   "lng" : -90.30375187989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "0ae022b8d6f23e776b9f4c711ee1b8f8babda426",
+          "name" : "Dewey School",
+          "place_id" : "ChIJWQ8Yg5_K2IcR_K3OWcl2-ws",
+          "plus_code" : {
+             "compound_code" : "JMJX+92 St. Louis, Missouri",
+             "global_code" : "86CFJMJX+92"
+          },
+          "rating" : 4.2,
+          "reference" : "ChIJWQ8Yg5_K2IcR_K3OWcl2-ws",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "6746 Clayton Ave, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.74592630000001,
+                "lng" : -90.2368417
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.74771102989272,
+                   "lng" : -90.23532477010728
+                },
+                "southwest" : {
+                   "lat" : 38.74501137010728,
+                   "lng" : -90.23802442989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "fc4b05051d3ab3bd4e38cc5500e82c1ec30a32a3",
+          "name" : "Central Middle School",
+          "place_id" : "ChIJyViUBFtJ34cRrRZbw1-Xvy0",
+          "plus_code" : {
+             "compound_code" : "PQW7+97 Moline Acres, Norwood Township, MO",
+             "global_code" : "86CFPQW7+97"
+          },
+          "rating" : 3,
+          "reference" : "ChIJyViUBFtJ34cRrRZbw1-Xvy0",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "9800 Patricia Barkalow Drive, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.627113,
+                "lng" : -90.26845999999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.62868487989272,
+                   "lng" : -90.26707427010727
+                },
+                "southwest" : {
+                   "lat" : 38.62598522010728,
+                   "lng" : -90.26977392989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "6711ff0b347413a16f3ee7175d2d1f36add8eeac",
+          "name" : "St. Louis University High School",
+          "photos" : [
+             {
+                "height" : 1728,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/105034663976835401358/photos\"\u003eTamara Rodney\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAAtsXUzhRPp9uDSbHKZi6YGE6AJ4CBrBSkxKemnNf1Y7YMa4PEEHBrjVDcIjMesTvB0pcwbBYNjYxmIqpyNAJXwsy5-BEADhlkcUaLvT11SXuXDiI2lIFvZCFUcFtC3XILEhCMBnLMrUEvnPy2OmsQjZ7nGhSYzKhNmVCH4-PAogiNKmdf10Echg",
+                "width" : 2592
+             }
+          ],
+          "place_id" : "ChIJu-4GFxm12IcR6SRKBhOFUW0",
+          "plus_code" : {
+             "compound_code" : "JPGJ+RJ St. Louis, Missouri",
+             "global_code" : "86CFJPGJ+RJ"
+          },
+          "rating" : 4.3,
+          "reference" : "ChIJu-4GFxm12IcR6SRKBhOFUW0",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "4970 Oakland Ave, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7416758,
+                "lng" : -90.2642551
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.74311312989272,
+                   "lng" : -90.26271492010727
+                },
+                "southwest" : {
+                   "lat" : 38.74041347010728,
+                   "lng" : -90.26541457989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "d86635ec81b7cce0699a8001528ed51be56c8354",
+          "name" : "Koch Elementary School",
+          "place_id" : "ChIJvYXOeIFJ34cRpDKFNqrL5Wg",
+          "plus_code" : {
+             "compound_code" : "PPRP+M7 Ferguson, Missouri",
+             "global_code" : "86CFPPRP+M7"
+          },
+          "rating" : 4.3,
+          "reference" : "ChIJvYXOeIFJ34cRpDKFNqrL5Wg",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "1910 Exuma Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7472545,
+                "lng" : -90.25117999999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.74864157989272,
+                   "lng" : -90.24956877010727
+                },
+                "southwest" : {
+                   "lat" : 38.74594192010728,
+                   "lng" : -90.25226842989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "a93e1fe3b1372f1e7ad6defe5bdcae18cbde411b",
+          "name" : "Meadows Elementary School",
+          "place_id" : "ChIJxZ9-YWVJ34cRQL0Irb2Kpso",
+          "plus_code" : {
+             "compound_code" : "PPWX+WG Moline Acres, Norwood Township, MO",
+             "global_code" : "86CFPPWX+WG"
+          },
+          "rating" : 3.8,
+          "reference" : "ChIJxZ9-YWVJ34cRQL0Irb2Kpso",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "9801 Edgefield Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.7489417,
+                "lng" : -90.23245469999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.75034442989271,
+                   "lng" : -90.23146737010727
+                },
+                "southwest" : {
+                   "lat" : 38.74764477010727,
+                   "lng" : -90.2341670298927
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "2a6d1d9a8bcc9090b0c71dc832bf359f8e125843",
+          "name" : "Gibson Elementary School",
+          "place_id" : "ChIJWSqxpE9J34cRSKXOrIUgNS4",
+          "plus_code" : {
+             "compound_code" : "PQX9+H2 Bellefontaine Neighbors, St Ferdinand Township, MO",
+             "global_code" : "86CFPQX9+H2"
+          },
+          "rating" : 3.5,
+          "reference" : "ChIJWSqxpE9J34cRSKXOrIUgNS4",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "9926 Fonda Dr, St. Louis"
+       },
+       {
+          "geometry" : {
+             "location" : {
+                "lat" : 38.5594322,
+                "lng" : -90.32321189999999
+             },
+             "viewport" : {
+                "northeast" : {
+                   "lat" : 38.56060457989272,
+                   "lng" : -90.32172497010727
+                },
+                "southwest" : {
+                   "lat" : 38.55790492010728,
+                   "lng" : -90.32442462989272
+                }
+             }
+          },
+          "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id" : "9a54c290740282623a4b5a1f4506282a09df715e",
+          "name" : "Affton High School",
+          "photos" : [
+             {
+                "height" : 2448,
+                "html_attributions" : [
+                   "\u003ca href=\"https://maps.google.com/maps/contrib/118275177196093293319/photos\"\u003eChristopher Inman\u003c/a\u003e"
+                ],
+                "photo_reference" : "CmRaAAAADBAMiMn2iijhX6ZMFUezMqy9xU5GtAscbSUT8hfSSsUiMBqAXQqhA3AkcSLxTG3L0FP1BVTziLMolzwipBxDYcK9Sy3CgigoOltGLY9GGz9J2_55XatyVxpt4fM60jg2EhDpLtUseLceKOKCgrOyAeK2GhSu5k_W0aDX-5rHNLQ5uEEwmjCShw",
+                "width" : 3264
+             }
+          ],
+          "place_id" : "ChIJH49HQY7J2IcRERrgqoShz38",
+          "plus_code" : {
+             "compound_code" : "HM5G+QP Affton, Missouri",
+             "global_code" : "86CFHM5G+QP"
+          },
+          "rating" : 4.5,
+          "reference" : "ChIJH49HQY7J2IcRERrgqoShz38",
+          "scope" : "GOOGLE",
+          "types" : [ "school", "point_of_interest", "establishment" ],
+          "vicinity" : "8309 MacKenzie Rd, St. Louis"
+       }
+    ],
+    "status" : "OK"
+ }
