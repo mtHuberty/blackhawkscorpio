@@ -2,7 +2,7 @@
   <div>
     <v-toolbar v-if="!isHomePage" fixed app flat dark color="primary">
       <v-layout row>
-        <v-flex xs5>
+        <v-flex xs2>
           <v-btn icon @click="goBack()">
             <v-icon>arrow_back</v-icon>
           </v-btn>
@@ -27,19 +27,19 @@ export default {
       return this.$route.fullPath === "/";
     },
     getToolbarText: function() {
-      const route = this.$route.fullPath || '';
-      
-      if(route.includes('service')){
-        return 'Okullar'
+      const route = this.$route.fullPath || "";
+
+      if (route.includes("service")) {
+        return "Okullar";
       }
-      if(route.includes('language')){
-        return 'Hizmetler'
+      if (route.includes("language")) {
+        return "Hizmetler";
       }
-      if(route.includes('country')){
-        return 'Language'
+      if (route.includes("country")) {
+        return "Language";
       }
 
-      return '';
+      return "";
     }
   },
   methods: {
