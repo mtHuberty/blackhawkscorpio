@@ -2,15 +2,11 @@
   <div>
     <v-toolbar v-if="!isHomePage" fixed app flat dark color="primary">
       <v-layout row>
-        <v-flex xs2>
-          <v-btn icon @click="goBack()">
-            <v-icon>arrow_back</v-icon>
-          </v-btn>
-        </v-flex>
-        <v-flex xs7 mt-2>
-          <h1> 
-            {{getToolbarText}}
-          </h1>
+        <v-btn icon @click="goBack()">
+          <v-icon>arrow_back</v-icon>
+        </v-btn>
+        <v-flex mt-2 class="title">
+          <h2>{{getToolbarText}}</h2>
         </v-flex>
       </v-layout>
     </v-toolbar>
@@ -49,3 +45,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.title {
+  text-align: center;
+  margin-left: -43px;
+}
+.title h2 {
+  font-weight: 500;
+}
+</style>

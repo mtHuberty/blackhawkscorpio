@@ -57,7 +57,7 @@ export default {
         },
         {
           icon: "fas fa-home",
-          color: "orange",
+          color: "purple",
           fullWidth: true,
           name: "housing"
         },
@@ -68,18 +68,18 @@ export default {
         },
         {
           icon: "fas fa-bus",
-          color: "purple",
+          color: "grey",
           name: "transportation"
         },
         {
           icon: "fas fa-utensils",
-          color: "green",
+          color: "orange",
           fullWidth: true,
           name: "grocery"
         },
         {
           icon: "fas fa-money-check-alt",
-          color: "grey",
+          color: "green",
           name: "bank"
         },
         {
