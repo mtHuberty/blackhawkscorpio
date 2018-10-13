@@ -13,23 +13,16 @@
         </blockquote>
       </v-layout>
     </v-slide-y-transition>
+    adsfadsf
+    <span class="flag-icon flag-icon-gr"></span>
+<span class="flag-icon flag-icon-gr flag-icon-squared"></span>
   </v-container>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<script>
+import "flag-icon-css/css/flag-icon.css";
+export default {};
+</script>
+
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>
