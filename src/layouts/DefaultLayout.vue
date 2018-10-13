@@ -1,16 +1,14 @@
 <template>
-    <div>
-        <v-toolbar fixed app>
-             <v-btn icon v-if="!isHomePage" @click="goBack()">
-              <v-icon>arrow_back</v-icon>
-            </v-btn>
-            <v-icon v-if="isHomePage">home</v-icon>
-            <v-toolbar-title>Black Hawk Scorpio!!!</v-toolbar-title>
-        </v-toolbar>
-        <v-content>
-            <router-view/>
-        </v-content>
-    </div>
+  <div>
+    <v-toolbar v-if="!isHomePage" fixed app flat dark color="primary">
+      <v-btn icon @click="goBack()">
+        <v-icon>arrow_back</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-content>
+        <router-view/>
+    </v-content>
+  </div>
 </template>
 <script>
 export default {

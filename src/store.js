@@ -47,7 +47,6 @@ export default new Vuex.Store({
   mutations: {
     updatePlaces(state, payload) {
       state.testPlaces.push(payload.newPlaces);
-      console.log(state.testPlaces);
     },
     updateMapCountryFilter(state, countryCode) {
       state.mapCountryFilter = countryCode
@@ -59,7 +58,6 @@ export default new Vuex.Store({
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(schoolData);
-          console.log(JSON.stringify(schoolData));
         }, 900)
       })
         .then(response => {

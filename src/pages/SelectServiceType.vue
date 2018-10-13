@@ -2,7 +2,7 @@
   <v-layout row class='page' wrap>
     <v-flex pa-2 v-for="item in items" :key="item.name" :xs12="item.fullWidth" :md12="item.fullWidth" xs6 md4>
       <div @click="route(item.name)">
-        <v-card :color="item.color" class='service'>
+        <v-card :color="item.color" hover class='service'>
           <v-card-text>
             <v-layout row justify-center align-center>
               <div class='service-icon'>
@@ -98,9 +98,6 @@ export default {
   padding: 3rem;
   cursor: pointer;
   transition: all 0.2s;
-}
-.service:hover {
-  opacity: 0.9;
 }
 .service-icon {
   padding: 1rem;

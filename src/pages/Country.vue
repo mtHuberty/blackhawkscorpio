@@ -29,10 +29,10 @@ export default {
 <style scoped>
 .flag-icon {
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.1s;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.4));
 }
 .flag-icon:hover {
-  opacity: 0.6;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.4));
 }
 </style>
