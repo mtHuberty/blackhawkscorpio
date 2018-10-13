@@ -45,18 +45,18 @@ export default new Vuex.Store({
     demoCountryCodes: ["us", "tr", "mx", "cn", "in", "tn", "id", "jp", "kr", "th", "ng", "pl"],
     languagesPerCountry: {
       "us": [{ code: "en", text: "English" }],
-      "tr": [{ code: "tr", text: "Türk"}, { code: "kmr", text: "کوردیا ژۆرین"}, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
-      "mx": [{ code: "mx", text: "Español"}, { code: "en", text: "English" }],
-      "cn": [{ code: "zh-Hans", text: "汉语"}, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
-      "in": [{ code: "hi", text: "हिंदी"}, { code: "bn", text: "বাঙালি" }, { code: "en", text: "English" }]
+      "tr": [{ code: "tr", text: "Türk" }, { code: "kmr", text: "کوردیا ژۆرین" }, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
+      "mx": [{ code: "mx", text: "Español" }, { code: "en", text: "English" }],
+      "cn": [{ code: "zh-Hans", text: "汉语" }, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
+      "in": [{ code: "hi", text: "हिंदी" }, { code: "bn", text: "বাঙালি" }, { code: "en", text: "English" }]
     },
     mapCountryFilter: ''
   },
   mutations: {
     updatePlaces(state, payload) {
-      state.places = payload.places.data.map( place => {
-        let placeRatings = place.ratings.map( rating => {
-          return new Rating(null, rating.culture, rating.score, rating.comments);
+      state.places = payload.places.data.map(place => {
+        let placeRatings = place.ratings.map((rating, index) => {
+          return new Rating(`${rating.culture}-${index}-${place.id}`, (rating.culture || "").toLowerCase(), rating.score, rating.comments);
         })
         return new Place(place.id, place.name, place.lat, place.long, placeRatings);
       });
@@ -64,24 +64,16 @@ export default new Vuex.Store({
     },
     updateMapCountryFilter(state, countryCode) {
       state.mapCountryFilter = countryCode
+    },
+    error(state, err) {
+      console.log(err)
     }
   },
   actions: {
-    fetchPlaces({commit, state}, serviceType) {
+    fetchPlaces({ commit }, serviceType) {
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
-      // return new Promise((resolve, reject) => {
-      //   setTimeout(() => {
-      //     resolve(schoolData);
-      //   }, 900)
-      // })
-        .then(response => {
-          commit('updatePlaces', {
-            places: response
-          });
-        })
-        .catch(err => {
-          console.error(err);
-        })
+        .then(places => commit('updatePlaces', { places }))
+        .catch(err => commit('error', err))
     },
     updateMapCountryFilter({ commit }, countryCode) {
       commit('updateMapCountryFilter', countryCode)
