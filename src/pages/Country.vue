@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-sm fluid>
     <v-layout row wrap>
-      <v-flex pa-2 v-for="country in countries" :key="country" xs6 sm4 md2 d-flex>
+      <v-flex pa-2 v-for="country in countries" :key="country" xs6 sm4 md3 d-flex>
         <Flag :country="country"></Flag>
       </v-flex>
     </v-layout>
