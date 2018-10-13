@@ -1,5 +1,5 @@
 <template>
-<v-tabs dark show-arrows v-if="this.countries.length">
+<v-tabs dark color="darkgrey" show-arrows v-if="this.countries.length">
     <v-tabs-slider ></v-tabs-slider>
     <v-tab @click="updateMapCountryFilter('')">
       <v-icon color="white" small>fas fa-globe</v-icon>
@@ -41,6 +41,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.flag-icon {
+  transform: scale(1.7);
+}
 </style>
 

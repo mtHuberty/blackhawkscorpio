@@ -1,7 +1,7 @@
 <template>
-  <div class="place">
-    <Map></Map>
+  <div>
     <MapFilter></MapFilter>
+    <Map></Map>
     <PlaceListing></PlaceListing>
   </div>
 </template>
@@ -16,10 +16,4 @@ export default {
   components: { Map, MapFilter, PlaceListing }
 };
 </script>
-
-<style scoped>
-.flag-icon {
-  transform: scale(1.5);
-}
-</style>
 

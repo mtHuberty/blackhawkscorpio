@@ -57,15 +57,9 @@ export default {
         },
         {
           icon: "fas fa-home",
-          color: "orange",
+          color: "purple",
           fullWidth: true,
           name: "housing"
-        },
-        {
-          icon: "fas fa-utensils",
-          color: "green",
-          fullWidth: true,
-          name: "grocery"
         },
         {
           icon: "fas fa-child",
@@ -74,12 +68,18 @@ export default {
         },
         {
           icon: "fas fa-bus",
-          color: "purple",
+          color: "grey",
           name: "transportation"
         },
         {
+          icon: "fas fa-utensils",
+          color: "orange",
+          fullWidth: true,
+          name: "grocery"
+        },
+        {
           icon: "fas fa-money-check-alt",
-          color: "grey",
+          color: "green",
           name: "bank"
         },
         {
@@ -100,6 +100,7 @@ export default {
   transition: all 0.2s;
 }
 .service-icon {
+  transform: scale(1.3);
   padding: 1rem;
   background-color: white;
   border-radius: 50%;
