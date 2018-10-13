@@ -11,7 +11,15 @@ export default {
   name: "map",
   computed: {
     ...mapState({
-      markers: state => state.places
+      markers: function(state) {
+        return state.places.filter(
+          place =>
+            state.mapCountryFilter === "" ||
+            place.ratings
+              .map(rating => rating.culture)
+              .includes(state.mapCountryFilter)
+        );
+      }
     })
   },
   data: function() {
