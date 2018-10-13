@@ -1,17 +1,19 @@
 <template>
   <div>
-    <v-container grid-list-sm text-xs-center>
-      <v-layout column wrap>
-        <v-flex>
-          <v-img
-            :src="`https://www.slu.edu/img/home/aerials_northcampus-min.jpg`"
-            aspect-ratio="1"
-            class="grey lighten-2"
-            height="225"
-            width="250"
-          />
+    <v-layout mt-2 row wrap>
+        <v-flex xs3/>
+        <v-flex xs6 justify-center>
+            <v-img
+              :src="`https://www.slu.edu/img/home/aerials_northcampus-min.jpg`"
+              aspect-ratio="1"
+              class="grey lighten-2"
+              height="225"
+              width="250"
+            />
         </v-flex>
+        <v-flex xs3/>
       </v-layout>
+    <v-container grid-list-sm text-xs-center>
       <v-layout row wrap>
         <v-flex xs12>
           <h1>
@@ -21,7 +23,7 @@
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12>
-          <p>1818'de kurulan Saint Louis Üniversitesi, ülkenin en eski ve en prestijli Katolik üniversitelerinden biridir. İspanya'nın Madrid kentinde de kampüse sahip olan SLU, dünya çapında akademisyenler, hayatı değiştiren araştırmalar, şefkatli sağlık hizmetleri ve inanç ve hizmete güçlü bir bağlılık olarak tanınmaktadır.</p>
+          <p>Saint Louis Üniversitesi, akademik mükemmelliğe, yaşamı değiştiren araştırmaya, şefkatli sağlık hizmetlerine ve topluma güçlü bir bağlılığa değer veren bir Katolik Cizvit kurumudur.</p>
         </v-flex>
       </v-layout>
       <v-layout row wrap>
@@ -84,4 +86,7 @@ export default {
 </script>
 
 <style scoped>
+.image_container{
+  text-align: center
+}
 </style>
