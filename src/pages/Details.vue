@@ -112,13 +112,13 @@ export default {
           src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
         },
         {
-          src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
+          src: 'https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png'
         },
         {
-          src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
+          src: 'http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg'
         },
         {
-          src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
+          src: 'https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg'
         }
       ],
       comments: [
