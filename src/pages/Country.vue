@@ -4,7 +4,7 @@
       <v-card>
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
-            <v-flex v-for="n in 9" :key="n" xs4 d-flex>
+            <v-flex v-for="n in 9" :key="n" xs6 sm4 m2 d-flex>
               <Flag country="us"></Flag>
             </v-flex>
           </v-layout>
