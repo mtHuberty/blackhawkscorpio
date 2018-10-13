@@ -1,6 +1,8 @@
 <template>
   <v-layout>
     <v-flex xs12>
+      <!-- TODO: remove this button. just for testing -->
+      <button @click="logApiKey">Log Key</button>
       <v-card>
         <v-container grid-list-sm fluid>
           <v-layout row wrap>
@@ -28,6 +30,10 @@ export default {
     })
   },
   methods: {
+    logApiKey() {
+      console.log(process.env.VUE_APP_MAP_API_KEY);
+      console.log(process.env.NODE_ENV);
+    }
   }
 };
 </script>
