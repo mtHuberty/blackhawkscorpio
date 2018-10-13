@@ -51,12 +51,12 @@
             <v-text-field color="blue" label="Yorumun"/>
           </v-flex>
           <v-flex>
-            <v-btn icon color="info"><v-icon>fas fa-comment</v-icon></v-btn>
+            <v-btn icon color="info"><v-icon small>fas fa-comment</v-icon></v-btn>
           </v-flex>
         </v-layout>
         <v-layout v-for="(comment, i) in comments" :key="i" row wrap mt-2>
           <v-flex mr-2 xs1>
-            <v-icon color="grey">fas fa-user</v-icon>
+            <v-icon color="grey" small>fas fa-user</v-icon>
           </v-flex>
           <v-flex xs10>
             <div>{{ comment }}</div>

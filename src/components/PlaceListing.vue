@@ -4,18 +4,18 @@
         <v-card hover>
           <v-card-text>
             <v-layout row>
-              <v-flex xs7>
+              <v-flex xs6>
                 {{ place.name }}
               </v-flex>
-              <v-flex xs3>
+              <v-flex xs4>
                 <v-layout row align-center="">
-                  <v-flex mr-3 xs2>
+                  <v-flex mr-3 xs2 class="flag-icon-container">
                     <span :class="`flag-icon flag-icon-${country}`"/>
                   </v-flex>
-                  <v-flex mr-4 xs4>
+                  <v-flex mr-5 xs4>
                     <FaceRating :rating="getRatingForCountry(place.ratings, country)"/>
                   </v-flex>
-                  <v-flex mr-3 xs2>
+                  <v-flex mr-3 xs2 class="flag-icon-container">
                     <span :class="'flag-icon flag-icon-us'"/>
                   </v-flex>
                   <v-flex xs4>
@@ -78,4 +78,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.flag-icon {
+  transform: scale(1.7);
+}
+</style>
 
