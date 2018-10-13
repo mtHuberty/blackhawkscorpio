@@ -11,4 +11,7 @@ export default {
 </script>
 
 <style scoped>
+.page {
+  padding: 1rem;
+}
 </style>
