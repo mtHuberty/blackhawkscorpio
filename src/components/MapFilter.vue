@@ -37,6 +37,7 @@ export default {
   },
   created() {
     this.fetchPlaces(this.service);
+    this.updateMapCountryFilter("");
   }
 };
 </script>

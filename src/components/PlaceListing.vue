@@ -50,13 +50,31 @@ export default {
     },
     ...mapState({
       places: function(state) {
-        return state.places.filter(
-          place =>
-            state.mapCountryFilter === "" ||
-            place.ratings
-              .map(rating => rating.culture)
-              .includes(state.mapCountryFilter)
-        );
+        return state.places
+          .filter(
+            place =>
+              state.mapCountryFilter === "" ||
+              place.ratings
+                .map(rating => rating.culture)
+                .includes(state.mapCountryFilter)
+          )
+          .sort((prev, next) => {
+            const prevCountry = this.getRatingForCountry(
+              prev.ratings,
+              this.country
+            );
+            const nextCountry = this.getRatingForCountry(
+              next.ratings,
+              this.country
+            );
+            if (prevCountry > nextCountry) {
+              return -1;
+            }
+            if (prevCountry < nextCountry) {
+              return 1;
+            }
+            return 0;
+          });
       }
     })
   },

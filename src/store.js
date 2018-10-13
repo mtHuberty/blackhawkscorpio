@@ -31,7 +31,8 @@ const sluPlace = new Place(
   "Saint Louis University",
   38.6354598,
   -90.23382319999999,
-  [new Rating("slu-57383f8bb6b4cd28ed11aab665263c7b0a9bab52", "us", 4, [])]
+  [new Rating("slu-57383f8bb6b4cd28ed11aab665263c7b0a9bab52", "us", 4, []),
+  new Rating("slu-asdf", "tr", 5, [])]
 );
 
 export default new Vuex.Store({
@@ -83,7 +84,7 @@ export default new Vuex.Store({
           });
 
           if (serviceType.toLowerCase() === "school") {
-            updatedPlaces = [sluPlace, ...updatedPlaces];
+            updatedPlaces = [...updatedPlaces, sluPlace];
           }
 
           commit('updatePlaces', updatedPlaces)
