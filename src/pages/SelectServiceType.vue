@@ -62,12 +62,6 @@ export default {
           name: "housing"
         },
         {
-          icon: "fas fa-utensils",
-          color: "green",
-          fullWidth: true,
-          name: "grocery"
-        },
-        {
           icon: "fas fa-child",
           color: "yellow",
           name: "childCare"
@@ -76,6 +70,12 @@ export default {
           icon: "fas fa-bus",
           color: "purple",
           name: "transportation"
+        },
+        {
+          icon: "fas fa-utensils",
+          color: "green",
+          fullWidth: true,
+          name: "grocery"
         },
         {
           icon: "fas fa-money-check-alt",

@@ -1,7 +1,8 @@
 <template>
   <div class="place">
-    <Map></Map>
     <MapFilter></MapFilter>
+    <Map></Map>
+
     <PlaceListing></PlaceListing>
   </div>
 </template>
