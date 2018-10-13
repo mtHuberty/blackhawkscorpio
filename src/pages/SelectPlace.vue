@@ -1,7 +1,7 @@
 <template>
   <div class="place">
-    <MapFilter></MapFilter>
     <Map></Map>
+    <MapFilter></MapFilter>
     <v-layout pt-2 column  justify-center>
       <v-flex xs12 md6 pa-2 v-for="(place, i) in places" :key="i">
         <v-card hover>
