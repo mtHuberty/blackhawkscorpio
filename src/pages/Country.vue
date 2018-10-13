@@ -1,28 +1,30 @@
 <template>
-  <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
-      </v-layout>
-    </v-slide-y-transition>
-    adsfadsf
-    <span class="flag-icon flag-icon-gr"></span>
-<span class="flag-icon flag-icon-gr flag-icon-squared"></span>
-  </v-container>
+  <v-layout>
+    <v-flex xs12>
+      <v-card>
+        <v-container grid-list-sm fluid>
+          <v-layout row wrap>
+            <v-flex v-for="n in 9" :key="n" xs4 d-flex>
+              <Flag country="us"></Flag>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
 import "flag-icon-css/css/flag-icon.css";
-export default {};
+import Flag from "../components/Flag";
+export default {
+  name: "country",
+  components: { Flag }
+};
 </script>
 
 <style scoped>
+* {
+  background-color: #000;
+}
 </style>
