@@ -50,17 +50,10 @@ export default new Vuex.Store({
     demoCountryCodes: ["us", "tr", "mx", "cn", "in", "tn", "id", "jp", "kr", "th", "ng", "pl"],
     languagesPerCountry: {
       "us": [{ code: "en", text: "English" }],
-<<<<<<< HEAD
       "tr": [{ code: "tr", text: "Türk"}, { code: "kmr", text: "کوردیا ژۆرین"}, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
       "mx": [{ code: "mx", text: "Español"}, { code: "en", text: "English" }],
       "cn": [{ code: "zh-Hans", text: "汉语"}, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
       "in": [{ code: "hi", text: "हिंदी"}, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }],
-=======
-      "tr": [{ code: "tr", text: "Türk" }, { code: "kmr", text: "کوردیا ژۆرین" }, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
-      "mx": [{ code: "mx", text: "Español" }, { code: "en", text: "English" }],
-      "cn": [{ code: "zh-Hans", text: "汉语" }, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
-      "in": [{ code: "zh-Hans", text: "汉语" }, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }],
->>>>>>> 7158f180284faf5aae500f945c69d10db7ec5789
     },
     mapCountryFilter: ''
   },
@@ -73,13 +66,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-<<<<<<< HEAD
     fetchPlaces({commit, state}, serviceType) {
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
-=======
-    fetchPlaces({ commit, state }) {
-      // return axios.get(`ians url here`)
->>>>>>> 7158f180284faf5aae500f945c69d10db7ec5789
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(schoolData);
