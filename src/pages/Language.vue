@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .lang {
   text-align: center;
-  font-size: 18pt;
+  font-size: 17pt;
 }
 
 .list {
