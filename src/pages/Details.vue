@@ -25,10 +25,10 @@
         <v-layout row>
           <v-flex mr-1 xs7/>
           <v-flex xs1>
-            <div :class="'d-flex flag-icon flag-icon-us ratings-bar'"/>
+            <div :class="'d-flex flag-icon flag-icon-us'"/>
           </v-flex>
           <v-flex>
-            <div :class="'d-flex flag-icon flag-icon-tr ratings-bar'"/>
+            <div :class="'d-flex flag-icon flag-icon-tr'"/>
           </v-flex>
         </v-layout>
         <v-layout align-content-space-between>
