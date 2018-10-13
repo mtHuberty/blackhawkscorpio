@@ -20,7 +20,6 @@ class Place {
 
 class Rating {
   constructor(id, culture, score, comments) {
-    this.id = id; // string
     this.culture = culture; // string
     this.score = score; // long
     this.comments = comments; // []string
@@ -29,11 +28,7 @@ class Rating {
 
 export default new Vuex.Store({
   state: {
-    places: [
-      new Place('123', 'Place A', 10.0, 10.0, [new Rating('12345', 'us', 5, []), new Rating('12347', 'mx', 3, [])]),
-      new Place('65562', 'Place B', 11.0, 11.0, [new Rating('123456', 'us', 5, [])]),
-      new Place('123465234234', 'Place C', 12.0, 12.0, [new Rating('12345689', 'us', 2, [])]),
-    ],
+    places: [],
     countryCodeLookup: {
       "United States": "us",
       "Turkey": "tr",
@@ -53,13 +48,19 @@ export default new Vuex.Store({
       "tr": [{ code: "tr", text: "Türk"}, { code: "kmr", text: "کوردیا ژۆرین"}, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
       "mx": [{ code: "mx", text: "Español"}, { code: "en", text: "English" }],
       "cn": [{ code: "zh-Hans", text: "汉语"}, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
-      "in": [{ code: "hi", text: "हिंदी"}, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }],
+      "in": [{ code: "hi", text: "हिंदी"}, { code: "bn", text: "বাঙালি" }, { code: "en", text: "English" }]
     },
     mapCountryFilter: ''
   },
   mutations: {
     updatePlaces(state, payload) {
-      // state.places.push(payload.newPlaces);
+      state.places = payload.places.data.map( place => {
+        let placeRatings = place.ratings.map( rating => {
+          return new Rating(null, rating.culture, rating.score, rating.comments);
+        })
+        return new Place(place.id, place.name, place.lat, place.long, placeRatings);
+      });
+      console.log(state.places);
     },
     updateMapCountryFilter(state, countryCode) {
       state.mapCountryFilter = countryCode
@@ -68,14 +69,14 @@ export default new Vuex.Store({
   actions: {
     fetchPlaces({commit, state}, serviceType) {
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve(schoolData);
-        }, 900)
-      })
+      // return new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     resolve(schoolData);
+      //   }, 900)
+      // })
         .then(response => {
           commit('updatePlaces', {
-            newPlaces: response
+            places: response
           });
         })
         .catch(err => {
