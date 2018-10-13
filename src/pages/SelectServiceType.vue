@@ -100,6 +100,7 @@ export default {
   transition: all 0.2s;
 }
 .service-icon {
+  transform: scale(1.3);
   padding: 1rem;
   background-color: white;
   border-radius: 50%;
