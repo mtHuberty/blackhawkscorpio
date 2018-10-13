@@ -82,6 +82,7 @@ export default {
 .service {
   padding: 3rem;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .service:hover {
   opacity: 0.9;
