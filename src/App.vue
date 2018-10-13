@@ -10,8 +10,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+a {
+  text-decoration: none;
+}
 .page {
+  max-width: 1200px;
+  margin: auto;
   padding: 1rem;
 }
 </style>

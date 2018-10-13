@@ -1,5 +1,16 @@
 <template>
   <div class="place">
-    <h1>This is an place page</h1>
+    <MapFilter></MapFilter>
+    <Map></Map>
   </div>
 </template>
+
+<script>
+import Map from "../components/Map";
+import MapFilter from "../components/MapFilter";
+
+export default {
+  name: "select-place",
+  components: { Map, MapFilter }
+};
+</script>
