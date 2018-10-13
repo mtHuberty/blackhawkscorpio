@@ -28,8 +28,10 @@ export default {
     },
     getToolbarText: function() {
       const route = this.$route.fullPath || '';
-      console.log(route)
-
+      
+      if(route.includes('service')){
+        return 'Okullar'
+      }
       if(route.includes('language')){
         return 'Hizmetler'
       }

@@ -3,7 +3,7 @@
       <v-list>
         <v-list-tile v-for="language in languages" :key="language.code" @click="route(language.code)">
           <v-list-tile-content>
-            <v-list-tile-title>{{ language.text }} ({{ language.code }}-{{ country.toUpperCase() }})</v-list-tile-title>
+              <v-list-tile-title class="text-sm-center">{{ language.text }} ({{ language.code }}-{{ country.toUpperCase() }})</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         </v-list>
