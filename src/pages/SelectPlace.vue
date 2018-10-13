@@ -3,7 +3,7 @@
     <MapFilter></MapFilter>
     <Map></Map>
     <v-layout pt-2 column  justify-center>
-      <v-flex xs12 md6 pa-2 v-for="place in places" :key="place.name">
+      <v-flex xs12 md6 pa-2 v-for="(place, i) in places" :key="i">
         <v-card hover>
           <v-card-text>
             <v-layout row>
@@ -48,29 +48,29 @@ export default {
         {
           name: 'Place Name',
           ratings: {
-            US: 4,
-            TR: 9
+            US: 2,
+            TR: 5
           }
         },
               {
           name: 'Place Name',
           ratings: {
-            US: 4,
-            TR: 9
+            US: 2,
+            TR: 5
           }
         },
               {
           name: 'Place Name',
           ratings: {
-            US: 6,
-            TR: 4
+            US: 3,
+            TR: 2
           }
         },
               {
           name: 'Place Name',
           ratings: {
-            US: 9,
-            TR: 4
+            US: 5,
+            TR: 2
           }
         }
       ]
