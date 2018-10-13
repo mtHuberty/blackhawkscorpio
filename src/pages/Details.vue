@@ -21,22 +21,22 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 mt-5 class='ratings-bar'>
+      <v-flex xs12 mt-5>
         <v-layout row>
           <v-flex mr-1 xs7/>
           <v-flex xs1>
-            <div :class="'d-flex flag-icon flag-icon-us'"/>
+            <div :class="'d-flex flag-icon flag-icon-us ratings-bar'"/>
           </v-flex>
           <v-flex>
-            <div :class="'d-flex flag-icon flag-icon-tr'"/>
+            <div :class="'d-flex flag-icon flag-icon-tr ratings-bar'"/>
           </v-flex>
         </v-layout>
         <v-layout align-content-space-between>
           <v-flex class='faces-container'>
-            <v-icon color="red">fas fa-frown</v-icon>
+            <v-icon medium color="red">fas fa-frown</v-icon>
           </v-flex>
           <v-flex class='faces-container'>
-            <v-icon color="green">fas fa-smile</v-icon>
+            <v-icon medium color="green" class="spacing-hack">fas fa-smile</v-icon>
           </v-flex>
         </v-layout>
       </v-flex>
@@ -150,8 +150,8 @@ export default {
 .carousel {
   height: 25rem;
 }
-.ratings-bar {
-  transform: scale(1.6);
+.spacing-hack {
+  margin-left: 110px
 }
 .flag-icon {
   margin-top: -0.7rem;
