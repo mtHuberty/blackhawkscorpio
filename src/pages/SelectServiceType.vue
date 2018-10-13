@@ -1,7 +1,7 @@
 <template>
   <v-layout row class='page' wrap>
     <v-flex pa-2 v-for="item in items" :key="item.name" :xs12="item.fullWidth" :md12="item.fullWidth" xs6 md4>
-      <router-link :to="item.name">
+      <div @click="route(item.name)">
         <v-card :color="item.color" class='service'>
           <v-card-text>
             <v-layout row justify-center align-center>
@@ -11,77 +11,93 @@
             </v-layout>
           </v-card-text>
         </v-card>
-      </router-link>
+      </div>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 export default {
-  name: 'SelectServiceType',
+  name: "SelectServiceType",
+  methods: {
+    route: function(service) {
+      this.$router.push(
+        `/country/${this.country}/language/${this.lang}/service/${service}`
+      );
+    }
+  },
+  computed: {
+    country: function() {
+      return this.$route.params.country || "";
+    },
+    lang: function() {
+      return this.$route.params.lang || "";
+    }
+  },
   data() {
-    return ({
+    return {
       items: [
         {
-          icon: 'fas fa-hospital',
-          color: 'red',
+          icon: "fas fa-hospital",
+          color: "red",
           fullWidth: true,
-          name: 'hospital'
+          name: "hospital"
         },
         {
-          icon: 'fas fa-shield-alt',
-          color: 'blue',
+          icon: "fas fa-shield-alt",
+          color: "blue",
           halfWidth: true,
-          name: 'police'
+          name: "police"
         },
         {
-          icon: 'fas fa-gavel',
-          color: 'brown',
+          icon: "fas fa-gavel",
+          color: "brown",
           halfWidth: true,
-          name: 'lawyer'
+          name: "lawyer"
         },
         {
-          icon: 'fas fa-home',
-          color: 'orange',
+          icon: "fas fa-home",
+          color: "orange",
           fullWidth: true,
-          name: 'housing'
+          name: "housing"
         },
         {
-          icon: 'fas fa-utensils',
-          color: 'green',
+          icon: "fas fa-utensils",
+          color: "green",
           fullWidth: true,
-          name: 'grocery'
+          name: "grocery"
         },
         {
-          icon: 'fas fa-child',
-          color: 'yellow',
-          name: 'childCare'
+          icon: "fas fa-child",
+          color: "yellow",
+          name: "childCare"
         },
         {
-          icon: 'fas fa-bus',
-          color: 'purple',
-          name: 'transportation'
+          icon: "fas fa-bus",
+          color: "purple",
+          name: "transportation"
         },
         {
-          icon: 'fas fa-money-check-alt',
-          color: 'grey',
-          name: 'bank'
+          icon: "fas fa-money-check-alt",
+          color: "grey",
+          name: "bank"
         },
         {
-          icon: 'fas fa-school',
-          color: 'pink',
-          name: 'school'
-        },
+          icon: "fas fa-school",
+          color: "pink",
+          name: "school"
+        }
       ]
-    })
+    };
   }
-}
+};
 </script>
 
 <style>
 .service {
   padding: 3rem;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .service:hover {
   opacity: 0.9;
