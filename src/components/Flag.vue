@@ -1,5 +1,5 @@
 <template>
-  <div :class="'d-flex flag-icon mb-2 flag-icon-' + this.country" @click="select"></div>
+  <div :class="'d-flex flag-icon mb-2 flag-icon-' + this.country" @click="route"></div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
     country: String
   },
   methods: {
-    select: function() {
+    route: function() {
       this.$router.push(`/country/${this.country}`);
     }
   }
