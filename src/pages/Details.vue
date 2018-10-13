@@ -155,7 +155,7 @@ export default {
   height: 25rem;
 }
 .flag-icon {
-  margin-top: -0.65rem;
+  margin-top: -0.6rem;
   border-left: solid 1px darkgrey;
   position: absolute;
   height: 1.5rem;
