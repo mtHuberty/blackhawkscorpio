@@ -3,16 +3,16 @@
       <v-flex xs12 md6 pa-2 v-for="(place, i) in places" :key="i" @click="route(place.id)">
         <v-card hover>
           <v-card-text>
-            <v-layout row>
-              <v-flex xs6>
+            <v-layout row align-center>
+              <v-flex xs7>
                 {{ place.name }}
               </v-flex>
-              <v-flex xs4>
-                <v-layout row align-center="">
+              <v-flex xs5>
+                <v-layout row align-center>
                   <v-flex mr-3 xs2 class="flag-icon-container">
                     <span :class="`flag-icon flag-icon-${country}`"/>
                   </v-flex>
-                  <v-flex mr-5 xs4>
+                  <v-flex mr-4 xs4>
                     <FaceRating :rating="getRatingForCountry(place.ratings, country)"/>
                   </v-flex>
                   <v-flex mr-3 xs2 class="flag-icon-container">
