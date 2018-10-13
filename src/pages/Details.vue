@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel>
+    <v-carousel class='carousel'>
       <v-carousel-item
         hide-controls
         v-for="(picture, i) in pictures"
@@ -21,14 +21,14 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 mt-2>
-        <v-layout row wrap>
+      <v-flex xs12 mt-5 class='ratings-bar'>
+        <v-layout row>
           <v-flex xs7/>
           <v-flex xs1>
-            <div :class="'d-flex flag-icon mb-2 flag-icon-us'"/>
+            <div :class="'d-flex flag-icon flag-icon-us'"/>
           </v-flex>
           <v-flex>
-            <div :class="'d-flex flag-icon mb-2 flag-icon-tr'"/>
+            <div :class="'d-flex flag-icon flag-icon-tr'"/>
           </v-flex>
         </v-layout>
         <v-layout align-content-space-between>
@@ -40,9 +40,9 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex xs12 class='score-bar'>
+      <v-flex xs12 class='gradient-bar'>
       </v-flex>
-      <v-flex xs12>
+      <v-flex xs12 mt-3>
         <v-layout row align-center mt-4>
           <v-flex mr-2 xs1>
             <v-icon color="blue">fas fa-user</v-icon>
@@ -96,11 +96,11 @@ export default {
 </script>
 
 <style scoped>
-.score-bar {
+.gradient-bar {
   margin: auto;
-  margin-top: -1.2rem;
+  margin-top: -1.3rem;
   z-index: 0;
-  width: 45%;
+  width: 71%;
   height: 5px;
   background: linear-gradient(to right, red,yellow, green);
 }
@@ -109,6 +109,20 @@ export default {
   text-align: center;
 }
 .flag-icon-tr {
-  transform: scale(1.5)
+  margin-top: -1.1rem !important;
+  transform: scale(1.5);
+}
+.carousel {
+  height: 25rem;
+}
+.ratings-bar {
+  transform: scale(1.6);
+}
+.flag-icon {
+  margin-top: -0.7rem;
+  border-left: solid 1px darkgrey;
+  position: absolute;
+  height: 1.5rem;
+  background-position: top; 
 }
 </style>
