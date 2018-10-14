@@ -46,7 +46,9 @@
     "blob": {
       "name": "Step Ahead Child Care Academy Inc",
       "service": "childcare",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -73,7 +75,9 @@
     "blob": {
       "name": "Step Ahead Child Care Academy Inc",
       "service": "childcare",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -100,7 +104,9 @@
     "blob": {
       "name": "Golden Angels Childcare Center",
       "service": "childcare",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -127,7 +133,9 @@
     "blob": {
       "name": "Child Care Connection",
       "service": "childcare",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -181,7 +189,9 @@
     "blob": {
       "name": "BEST Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -208,7 +218,9 @@
     "blob": {
       "name": "Child Care Connection",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -227,26 +239,9 @@
     "blob": {
       "name": "Veolia Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
-      "description": {
-        "en": "",
-        "tr": ""
-      }
-    }
-  },
-  {
-    "id": "7b61db7c516da7975c838b9d8b303cebe37a0b00",
-    "ratings": [
-      {
-        "culture": "mx",
-        "score": 3,
-        "comments": []
-      }
-    ],
-    "blob": {
-      "name": "Veolia Transportation",
-      "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -265,7 +260,9 @@
     "blob": {
       "name": "Veolia Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -284,7 +281,9 @@
     "blob": {
       "name": "Veolia Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -303,7 +302,9 @@
     "blob": {
       "name": "Veolia Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -322,7 +323,9 @@
     "blob": {
       "name": "Veolia Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": [
+        "https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+      ],
       "description": {
         "en": "",
         "tr": ""
@@ -340,7 +343,10 @@
       {
         "culture": "tr",
         "score": 5.1,
-        "comments": ["Billikens'e git!", "Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz"]
+        "comments": [
+          "Billikens'e git!",
+          "Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz"
+        ]
       }
     ],
     "blob": {
@@ -369,18 +375,13 @@
       {
         "culture": "tr",
         "score": 4,
-        "comments": ["Billikens'e git!", "Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz"]
+        "comments": []
       }
     ],
     "blob": {
       "name": "Ranken Technical College",
       "service": "school",
-      "images": [
-        "https://www.slu.edu/img/home/aerials_northcampus-min.jpg",
-        "https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png",
-        "http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg",
-        "https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg"
-      ],
+      "images": [],
       "description": {
         "en": "",
         "tr": ""
