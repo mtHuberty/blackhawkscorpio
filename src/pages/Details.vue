@@ -53,7 +53,7 @@
             <v-icon color="blue">fas fa-user</v-icon>
           </v-flex>
           <v-flex mr-2 xs9>
-            <v-text-field color="blue" label="Yorumun"/>
+            <v-text-field color="blue" label="Yorumun" v-model="newComment" @keyup.enter="saveComment"/>
           </v-flex>
           <v-flex>
             <v-dialog
@@ -64,6 +64,7 @@
                 icon color="info"
                 slot="activator"
                 dark
+                @click="saveComment"
               >
                 <v-icon small>fas fa-comment</v-icon>
               </v-btn>
@@ -107,28 +108,38 @@
 <script>
 export default {
   name: "Details",
+  methods: {
+    saveComment: function() {
+      this.comments = [this.newComment, ...this.comments];
+      this.newComment = "";
+      this.dialog = true;
+    }
+  },
   data() {
     return {
       dialog: false,
+      newComment: "",
       pictures: [
         {
-          src: 'https://www.slu.edu/img/home/aerials_northcampus-min.jpg'
+          src: "https://www.slu.edu/img/home/aerials_northcampus-min.jpg"
         },
         {
-          src: 'https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png'
+          src:
+            "https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png"
         },
         {
-          src: 'http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg'
+          src:
+            "http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg"
         },
         {
-          src: 'https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg'
+          src: "https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg"
         }
       ],
       comments: [
-        `Billikens'e git!`, 
+        `Billikens'e git!`,
         `Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz`
-      ],
-    }
+      ]
+    };
   }
 };
 </script>
@@ -140,7 +151,7 @@ export default {
   z-index: 0;
   width: 76%;
   height: 7px;
-  background: linear-gradient(to right, red,yellow, green);
+  background: linear-gradient(to right, red, yellow, green);
 }
 .faces-container {
   z-index: 1;
@@ -157,8 +168,8 @@ export default {
   border-left: solid 1px darkgrey;
   position: absolute;
   height: 1.5rem;
-  background-position: top; 
-  transform: scale(1.5)
+  background-position: top;
+  transform: scale(1.5);
 }
 .modal-header {
   margin: auto;
