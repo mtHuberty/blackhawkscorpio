@@ -75,6 +75,9 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    resetPlaces() {
+      commit('updatePlaces', [])
+    },
     fetchPlaces({ commit }, serviceType) {
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
         .then(places => {
