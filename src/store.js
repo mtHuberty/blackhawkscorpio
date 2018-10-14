@@ -1,38 +1,45 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import schoolData from '../school-data.json'
-import { resolve } from 'url';
-
 
 Vue.use(Vuex)
 
-
 class Place {
-  constructor(id, name, lat, lng, ratings) {
-    this.id = id; // string
-    this.name = name;
-    this.position = { lat, lng }; // string
-    this.ratings = ratings; // []Rating
+  constructor(place, ratings) {
+    this.id = place.id;
+    this.name = place.name || "";
+    this.description = place.description || {};
+    this.images = place.images || [];
+    this.position = { lat: place.lat, lng: place.long };
+    this.ratings = ratings;
   }
 }
-
 
 class Rating {
-  constructor(id, culture, score, comments) {
-    this.culture = culture; // string
-    this.score = score; // long
-    this.comments = comments; // []string
+  constructor(rating) {
+    this.culture = rating.culture;
+    this.score = rating.score;
+    this.comments = rating.comments;
   }
 }
 
-const sluPlace = new Place(
-  "57383f8bb6b4cd28ed11aab665263c7b0a9bab52",
-  "Saint Louis University",
-  38.6354598,
-  -90.23382319999999,
-  [new Rating("slu-57383f8bb6b4cd28ed11aab665263c7b0a9bab52", "us", 4, []),
-  new Rating("slu-asdf", "tr", 5, [])]
+const sluPlace = new Place({
+  id: "57383f8bb6b4cd28ed11aab665263c7b0a9bab52",
+  name: "Saint Louis University",
+  description: {
+    "tr": "Saint Louis Üniversitesi, akademik mükemmelliğe, yaşamı değiştiren araştırmaya, şefkatli sağlık hizmetlerine ve topluma güçlü bir bağlılığa değer veren bir Katolik Cizvit kurumudur."
+  },
+  images: [
+    "https://www.slu.edu/img/home/aerials_northcampus-min.jpg",
+    "https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png",
+    "http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg",
+    "https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg"
+  ],
+  lat: 38.6354598,
+  long: -90.23382319999999
+},
+  [new Rating({ culture: "us", score: 4, comments: [] }),
+  new Rating({ culture: "tr", score: 5.1, comments: ["Billikens'e git!", "Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz"] })]
 );
 
 export default new Vuex.Store({
@@ -90,9 +97,9 @@ export default new Vuex.Store({
         .then(places => {
           let updatedPlaces = places.data.map(place => {
             let placeRatings = place.ratings.map((rating, index) => {
-              return new Rating(`${rating.culture}-${index}-${place.id}`, (rating.culture || "").toLowerCase(), rating.score, rating.comments);
+              return new Rating((rating.culture || "").toLowerCase(), rating.score, rating.comments);
             })
-            return new Place(place.id, place.name, place.lat, place.long, placeRatings);
+            return new Place(place, placeRatings);
           });
 
           if (serviceType.toLowerCase() === "school") {
