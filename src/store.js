@@ -59,7 +59,14 @@ export default new Vuex.Store({
       "tr": [{ code: "tr", text: "Türk" }, { code: "kmr", text: "کوردیا ژۆرین" }, { code: "ar", text: "عربى" }, { code: "en", text: "English" }],
       "mx": [{ code: "mx", text: "Español" }, { code: "en", text: "English" }],
       "cn": [{ code: "zh-Hans", text: "汉语" }, { code: "mn", text: "монгол хэл" }, { code: "zh", text: "བོད་སྐད།" }, { code: "en", text: "English" }],
-      "in": [{ code: "hi", text: "हिंदी" }, { code: "bn", text: "বাঙালি" }, { code: "en", text: "English" }]
+      "in": [{ code: "hi", text: "हिंदी" }, { code: "bn", text: "বাঙালি" }, { code: "en", text: "English" }],
+      "tn": [{ code: "mx", text: "Español" }, { code: "en", text: "English" }],
+      "id": [{ code: "id", text: "bahasa Indonesia" }, { code: "en", text: "English" }],
+      "jp": [{ code: "jp", text: "日本語" }, { code: "en", text: "English" }],
+      "kr": [{ code: "kr", text: "한국어" }, { code: "en", text: "English" }],
+      "th": [{ code: "th", text: "ไทย" }, { code: "en", text: "English" }],
+      "ng": [{ code: "ng", text: "Izere	" }, { code: "en", text: "English" }],
+      "pl": [{ code: "pl", text: "Polskie" }, { code: "en", text: "English" }]
     },
     mapCountryFilter: ''
   },
