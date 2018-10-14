@@ -17,14 +17,18 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 export default {
   name: "SelectServiceType",
   methods: {
     route: function(service) {
+      this.resetPlaces();
       this.$router.push(
         `/country/${this.country}/language/${this.lang}/service/${service}`
       );
-    }
+    },
+    ...mapActions(["resetPlaces"])
   },
   computed: {
     country: function() {
