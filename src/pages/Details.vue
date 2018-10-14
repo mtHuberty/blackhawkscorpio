@@ -68,27 +68,25 @@
                 <v-icon small>fas fa-comment</v-icon>
               </v-btn>
               <v-card>
-                <v-card-title
-                  class="headline lighten-2"
-                  primary-title
-                >
-                  Değerlendirme
+                <v-card-title class="headline" justify-center>
+                  <span class="modal-header">Değerlendirme</span>
                 </v-card-title>
-
                 <v-divider></v-divider>
-                <v-card-actions>
+                <v-card-content>
                   <v-spacer></v-spacer>
-                  <v-btn flat @click="dialog = false">
-                    <v-icon color="red">fas fa-frown</v-icon>
-                  </v-btn>
-                  <v-btn flat @click="dialog = false">
-                    <v-icon color="grey">fas fa-meh</v-icon>
-                  </v-btn>
-                  <v-btn flat @click="dialog = false">
-                    <v-icon color="green">fas fa-smile</v-icon>
-                  </v-btn>
+                  <div class="pa-4">
+                    <v-btn flat @click="dialog = false">
+                      <v-icon color="red" x-large>fas fa-frown</v-icon>
+                    </v-btn>
+                    <v-btn flat @click="dialog = false">
+                      <v-icon color="grey" x-large>fas fa-meh</v-icon>
+                    </v-btn>
+                    <v-btn flat @click="dialog = false">
+                      <v-icon color="green" x-large>fas fa-smile</v-icon>
+                    </v-btn>
+                  </div>
                   <v-spacer></v-spacer>
-                </v-card-actions>
+                </v-card-content>
               </v-card>
             </v-dialog>
           </v-flex>
@@ -161,5 +159,8 @@ export default {
   height: 1.5rem;
   background-position: top; 
   transform: scale(1.5)
+}
+.modal-header {
+  margin: auto;
 }
 </style>
