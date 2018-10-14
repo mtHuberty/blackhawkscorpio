@@ -83,7 +83,7 @@ export default {
       return (
         (ratings || [])
           .filter(rating => rating.culture === country)
-          .map(rating => rating.score) || 0
+          .map(rating => rating.score) || [-1]
       );
     },
     route: function(id) {
