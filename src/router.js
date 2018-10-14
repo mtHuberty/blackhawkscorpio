@@ -7,6 +7,7 @@ import SelectServiceType from './pages/SelectServiceType.vue'
 import Language from './pages/Language.vue'
 import Details from './pages/Details.vue'
 import SelectPlace from './pages/SelectPlace.vue'
+import Splash from './pages/Splash.vue'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
         { name: 'select-place', path: 'country/:country/language/:lang/service/:service', component: SelectPlace },
         { name: 'details', path: 'country/:country/language/:lang/service/:service/place/:place', component: Details },
       ]
+    },
+    {
+      path: '/splash',
+      name: 'splash',
+      component: Splash
     }
   ]
 })
