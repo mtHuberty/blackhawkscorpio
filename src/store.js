@@ -96,8 +96,8 @@ export default new Vuex.Store({
       return axios.get(`http://localhost:3000/placesSearch/${serviceType}`)
         .then(places => {
           let updatedPlaces = places.data.map(place => {
-            let placeRatings = place.ratings.map((rating, index) => {
-              return new Rating((rating.culture || "").toLowerCase(), rating.score, rating.comments);
+            let placeRatings = place.ratings.map(rating => {
+              return new Rating({ culture: (rating.culture || "").toLowerCase(), score: rating.score, comments: rating.comments });
             })
             return new Place(place, placeRatings);
           });

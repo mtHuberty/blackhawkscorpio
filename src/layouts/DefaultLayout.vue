@@ -36,7 +36,7 @@ export default {
         kr: "Services",
         th: "Services",
         ng: "Services",
-        pl: "Services",
+        pl: "Services"
       },
       hospital: {
         en: "Hospital",
@@ -54,7 +54,7 @@ export default {
         kr: "Hospital",
         th: "Hospital",
         ng: "Hospital",
-        pl: "Hospital",
+        pl: "Hospital"
       },
       police: {
         en: "Police",
@@ -72,7 +72,7 @@ export default {
         kr: "Police",
         th: "Police",
         ng: "Police",
-        pl: "Police",
+        pl: "Police"
       },
       lawyer: {
         en: "Lawyer",
@@ -90,7 +90,7 @@ export default {
         kr: "Lawyer",
         th: "Lawyer",
         ng: "Lawyer",
-        pl: "Lawyer",
+        pl: "Lawyer"
       },
       housing: {
         en: "Housing",
@@ -108,7 +108,7 @@ export default {
         kr: "Housing",
         th: "Housing",
         ng: "Housing",
-        pl: "Housing",
+        pl: "Housing"
       },
       childCare: {
         en: "Child Care",
@@ -126,7 +126,7 @@ export default {
         kr: "Child Care",
         th: "Child Care",
         ng: "Child Care",
-        pl: "Child Care",
+        pl: "Child Care"
       },
       transportation: {
         en: "Transportation",
@@ -144,7 +144,7 @@ export default {
         kr: "Transportation",
         th: "Transportation",
         ng: "Transportation",
-        pl: "Transportation",
+        pl: "Transportation"
       },
       grocery: {
         en: "Grocery",
@@ -162,7 +162,7 @@ export default {
         kr: "Grocery",
         th: "Grocery",
         ng: "Grocery",
-        pl: "Grocery",
+        pl: "Grocery"
       },
       bank: {
         en: "Bank",

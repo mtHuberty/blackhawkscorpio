@@ -25,6 +25,7 @@ export default {
           ...new Set(
             state.places
               .reduce((ratings, place) => ratings.concat(place.ratings), [])
+              .filter(rating => rating !== undefined)
               .map(rating => rating.culture)
               .filter(culture => state.countryCodes.includes(culture))
           )
