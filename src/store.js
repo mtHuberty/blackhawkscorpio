@@ -23,7 +23,7 @@ class Rating {
   }
 }
 
-const sluPlace = new Place({
+export const sluPlace = new Place({
   id: "57383f8bb6b4cd28ed11aab665263c7b0a9bab52",
   name: "Saint Louis University",
   description: {

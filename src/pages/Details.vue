@@ -8,16 +8,16 @@
         :src="picture.src"
       ></v-carousel-item>
     </v-carousel>
-    <v-layout column class='page'>
+    <v-layout column class='page' v-if="fetched">
       <v-flex pt-2 xs12>
         <v-layout column>
           <v-flex xs12>
             <h1>
-              Saint Louis Üniversitesi
+             {{ name }}
             </h1>
           </v-flex>
           <v-flex xs12>
-            <p>Saint Louis Üniversitesi, akademik mükemmelliğe, yaşamı değiştiren araştırmaya, şefkatli sağlık hizmetlerine ve topluma güçlü bir bağlılığa değer veren bir Katolik Cizvit kurumudur.</p>
+            <p>{{ description}}</p>
           </v-flex>
         </v-layout>
       </v-flex>
@@ -73,7 +73,6 @@
                   <span class="modal-header">Değerlendirme</span>
                 </v-card-title>
                 <v-divider></v-divider>
-                <v-card-content>
                   <v-spacer></v-spacer>
                   <div class="pa-4">
                     <v-btn flat @click="dialog = false">
@@ -87,7 +86,6 @@
                     </v-btn>
                   </div>
                   <v-spacer></v-spacer>
-                </v-card-content>
               </v-card>
             </v-dialog>
           </v-flex>
@@ -106,6 +104,9 @@
 </template>
 
 <script>
+import axios from "axios";
+import { sluPlace } from "../store.js";
+
 export default {
   name: "Details",
   methods: {
@@ -118,28 +119,43 @@ export default {
   data() {
     return {
       dialog: false,
+      fetched: false,
       newComment: "",
+      name: "",
+      description: "",
       pictures: [
         {
-          src: "https://www.slu.edu/img/home/aerials_northcampus-min.jpg"
-        },
-        {
           src:
-            "https://stlouisearthday.org/wp-content/uploads/2018/05/slu-bicentennial-logo.png"
-        },
-        {
-          src:
-            "http://mediad.publicbroadcasting.net/p/kwmu/files/styles/x_large/public/201609/bb4_9559__1_.jpg"
-        },
-        {
-          src: "https://media.glassdoor.com/l/99/87/55/e3/slu-campus.jpg"
+            "https://www.tripsavvy.com/thmb/SBY7wlbHNCCDPDaLyEF77eMH058=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
         }
       ],
-      comments: [
-        `Billikens'e git!`,
-        `Biz burada seviyoruz! Eğitim en üst düzeydedir ve şehirdeki en iyisi, buraya gelmenizi şiddetle tavsiye ediyoruz`
-      ]
+      comments: []
     };
+  },
+  created() {
+    return axios
+      .get(`http://localhost:3000/places/${this.$route.params.place}`)
+      .then(place => {
+        const data = place.data;
+        if (!data.id) {
+          return;
+        }
+        this.name = data.blob.name;
+        this.description =
+          data.blob.description[this.$route.params.lang] ||
+          data.blob.description["en"];
+        this.pictures = (data.blob.images && data.blob.images.length
+          ? data.blob.images
+          : [
+              "https://www.tripsavvy.com/thmb/SBY7wlbHNCCDPDaLyEF77eMH058=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"
+            ]
+        ).map(src => ({ src }));
+        this.comments =
+          (data.ratings || [])
+            .filter(rating => rating.culture === this.$route.params.lang)
+            .map(rating => rating.comments)[0] || [];
+        this.fetched = true;
+      });
   }
 };
 </script>
