@@ -75,7 +75,7 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    resetPlaces() {
+    resetPlaces({ commit }) {
       commit('updatePlaces', [])
     },
     fetchPlaces({ commit }, serviceType) {
