@@ -19,10 +19,10 @@
     "blob": {
       "name": "Step Ahead Child Care Academy Inc",
       "service": "childcare",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": ["http://static.sites.yp.com/var/m_8/87/876/11169401/374382-399755-one_year_old_classroom.jpg"],
       "description": {
-        "en": "",
-        "tr": ""
+        "en": "From the moment your children join our Step Ahead family, they take their first giant step on a journey to reach their highest potential with a sense of self-esteem and love of learning that they will carry with them into Kindergarten and beyond. But don’t take our word for it,  talk to our parents, meet our exceptional staff, but most importantly, judge for yourself when you enter our doors for your very first interview. The warmth, love and excitement are palpable throughout the center. Look, listen and feel the difference!",
+        "tr": "Çocuklarınız bizim Adım Ahead ailesine katıldığı andan itibaren, en büyük potansiyellerine ulaşmak için bir yolculuğa kendi öz saygılarını ve Anaokulu ve ötesine taşıyacakları öğrenme sevgisi ile aşıyorlar. Ama bizim için sözümüze gerek yok, ebeveynlerimizle konuşun, olağanüstü çalışanlarımızla tanışın, ama en önemlisi, ilk görüşmeniz için kapılarımıza girdiğinizde kendiniz karar verin. Sıcaklık, sevgi ve heyecan merkezi boyunca hissedilebilir. Bak, farkı dinle ve dinle!"
       }
     }
   },
@@ -154,10 +154,10 @@
     "blob": {
       "name": "Department of Transportation",
       "service": "transportation",
-      "images": ["https://www.tripsavvy.com/thmb/LcNSKhHrZm4ruxj58IAjoouXidc=/950x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/sunset--the-gateway-arch--st-louis--missouri--america-534594640-5af38f4f43a10300374eb31f.jpg"],
+      "images": ["https://www.stlouis-mo.gov/images/metrolink-train-corner-track-blurred.jpg"],
       "description": {
-        "en": "",
-        "tr": ""
+        "en": "The United States Department of Transportation is a federal Cabinet department of the U.S. government concerned with transportation. It was established by an act of Congress on October 15, 1966, and began operation on April 1, 1967. It is governed by the United States Secretary of Transportation.",
+        "tr": "Amerika Birleşik Devletleri Ulaştırma Bakanlığı, ABD hükümetinin ulaşımla ilgili federal bir kabine departmanıdır. 15 Ekim 1966'da bir Kongre tarafından kuruldu ve 1 Nisan 1967'de faaliyete başladı. Birleşik Devletler Ulaştırma Bakanı tarafından yönetiliyor."
       }
     }
   },
@@ -354,7 +354,7 @@
       ],
       "description": {
         "en": "",
-        "tr": ""
+        "tr": "Saint Louis Üniversitesi, akademik mükemmelliğe, yaşamı değiştiren araştırmaya, şefkatli sağlık hizmetlerine ve topluma güçlü bir bağlılığa değer veren bir Katolik Cizvit kurumudur."
       }
     }
   },
