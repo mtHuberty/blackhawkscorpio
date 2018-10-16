@@ -1,4 +1,4 @@
-# blackhawkscorpio
+# Pathfinder
 
 ## Project setup
 ```
