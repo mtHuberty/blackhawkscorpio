@@ -1,4 +1,5 @@
 # Globalhack 7 (2018) Project Submission
+(Link to submission with screenshots)[https://devpost.com/software/project-blackhawk-scorpio]
 
 # Description
 Pathfinder enables foreign born immigrants to quickly find out about services near them. These services are identified by recommendations from other people with similar backgrounds. Pathfinder also enables the discovery of services for all individuals including those weaker literary skills.
